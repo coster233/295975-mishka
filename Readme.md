@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артур Шах](https://up.htmlacademy.ru/adaptive/14/user/295975).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Распономарев] (https://htmlacademy.ru/profile/id64492).
 
 ---
 
