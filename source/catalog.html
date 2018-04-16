@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg"
+        width="226" height="30" alt="Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--search">
+              <a href="catalog.html">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main__catalog-head">
+        <h1 class="page-main__catalog-title">Каталог товаров</h1>
+      </div>
+      <section class="catalog-items">
+        <ul class="catalog-items__list">
+          <li class="catalog-items__item">
+            <img class="catalog-items__picture" src="http://placehold.it/150x100" alt="Зайчик попрыгайчик">
+            <div class="catalog-items__exposition">
+              <h1 class="catalog-items__title">Зайчик-попрыгайчик</h1>
+              <span class="catalog-items__parameters">Рост 30 см, вес 200 г</span>
+            </div>
+            <div class="catalog-items__buy">
+              <span class="catalog-items__price">1200 руб.</span>
+              <a class="catalog-items__basket" href="#"></a>
+            </div>
+          </li>
+          <li class="catalog-items__item">
+            <img class="catalog-items__picture" src="http://placehold.it/150x100" alt="Корзинка для белья">
+            <div class="catalog-items__exposition">
+              <h1 class="catalog-items__title">Корзинка для белья</h1>
+              <span class="catalog-items__parameters">Диаметр 15 см, высота 10 см</span>
+            </div>
+            <div class="catalog-items__buy">
+              <span class="catalog-items__price">690 руб.</span>
+              <a class="catalog-items__basket" href="#"></a>
+            </div>
+          </li>
+          <li class="catalog-items__item">
+            <img class="catalog-items__picture" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
+            <div class="catalog-items__exposition">
+              <h1 class="catalog-items__title">Большая корзинка для игрушек</h1>
+              <span class="catalog-items__parameters">Диаметр 30 см, высота 30 см</span>
+            </div>
+            <div class="catalog-items__buy">
+              <span class="catalog-items__price">1500 руб.</span>
+              <a class="catalog-items__basket" href="#"></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="fabrication">
+        <h1 class="fabrication__title">Процесс производства</h1>
+        <img class="fabrication__illustration" src="http://placehold.it/150x100" alt="Иллюстрация к процессу производства" width="260" height="150">
+        <div class="fabrication__text">
+          <p class="fabrication__content">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="fabrication__buy button" href="#">Сделать заказ</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal">
+      <div class="modal__form">
+        <h1 class="modal__form-title">Добавить в корзину</h1>
+        <span class="modal__form-choice">Выберите размер</span>
+        <ul class="modal__form-list">
+          <li class="modal__form-item">
+            <span class="modal__form-size">S</span>
+          </li>
+          <li>
+            <span class="modal__form-size">M</span>
+          </li>
+          <li>
+            <span class="modal__form-size">L</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Контакты</b>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <span class="contacts__email">e-mail:</span>
+            <span class="contacts__email-adress">info@mimimishkashop.ru</span>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__adress">адрес:</span>
+            <p class="contacts__adress-home">
+              г. Санкт-Петербург,<br>
+              ул. Большая Конюшенная,<br>
+              д. 19/8, офис 101</p>
+          </li>
+        </ul>
+        <div class="map">
+          <img class="map__home" src="http://placehold.it/150x100">
+        </div>
+        <a class="page-footer__connection button" href="#">Написать</a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+
+  </body>
+  </html>
