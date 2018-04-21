@@ -1,0 +1,48 @@
+.contacts__main {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.contacts__item__email,
+.contacts__item__email-adress,
+.contacts__adress,
+.contacts__adress-home {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts__item {
+  display: flex;
+}
+
+.contacts__adress-home {
+  margin: 0;
+}
+
+.contacts__connection-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacts__connection {
+  color: #444444;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+  width: 256px;
+  display: block;
+  text-align: center;
+}

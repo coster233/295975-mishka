@@ -1,0 +1,22 @@
+.advantages {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.advantages__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.advantages__description {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,21 @@
+.goods__slogan {
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.goods__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #63d1bb;
+  color: #ffffff;
+}
+
+.goods__title {
+  width: 100px;
+  padding-left: 28px;
+}

@@ -1,0 +1,36 @@
+.catalog-items {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.catalog-items__item {
+  border: 1px solid #ededed;
+  margin-bottom: 30px;
+}
+
+.catalog-items__list {
+  list-style: none;
+  padding: 0;
+}
+
+.catalog-items__exposition,
+.catalog-items__buy {
+  padding-left: 30px;
+}
+
+.catalog-items__title {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.catalog-items__parameters {
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.catalog-items__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}

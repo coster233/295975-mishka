@@ -1,0 +1,40 @@
+.page-footer__wrapper {
+  background-color: #f1f1f1;
+}
+
+.page-footer__social {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.social__list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.social__link {
+  font-size: 0;
+}
+
+.page-footer__list {
+  list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright__text {
+  font-size: 19px;
+  line-height: 18px;
+  vertical-align: sub;
+
+}
+
+.copyright__link {
+  display: block;
+  font-size: 0;
+  width: 27px;
+  height: 34px;
+}

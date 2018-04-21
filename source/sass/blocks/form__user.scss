@@ -1,0 +1,41 @@
+.form__user {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__user-login {
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+
+.form__user-text {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.form__user-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__user-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form__user-entry {
+  border: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  font-size: 17px;
+  color: #444444;
+  line-height: 18px;
+}
