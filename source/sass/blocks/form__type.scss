@@ -10,6 +10,9 @@
 }
 
 .form__text-type {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -20,39 +23,27 @@
   padding: 0;
 }
 
-
-.form__text-type  {
-    display: block;
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
-
 .form__item-type[type="radio"] {
-    display: none;
+  display: none;
 }
 
-
-.form__item-type[type="radio"] + .form__text-type:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    margin-right: 8px;
-    vertical-align: middle;
-    border: 3px solid #ffffff;
-    box-shadow: 0 0 0 3px #bdc3c7;
+.form__item-type[type="radio"] + .form__text-type::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 3px #bdc3c7;
+  border-radius: 50%;
 }
 
-.form__item-type[type="radio"] + .form__text-type:before {
-    border-radius: 50%;
-}
-
-
-.form__item-type[type="radio"]:checked  + .form__text-type:before {
-    background: black;
-    box-shadow: 0 0 0 3px #1abc9c;
+.form__item-type[type="radio"]:checked + .form__text-type::before {
+  background: black;
+  box-shadow: 0 0 0 3px #1abc9c;
 }
 
 .form__item-type[type="radio"]:checked + .form__text-type {
-    color: #1abc9c;
+  color: #1abc9c;
 }

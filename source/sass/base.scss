@@ -3,7 +3,7 @@ body {
   padding: 0;
 
 
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   color: #444444;
 
 
@@ -16,12 +16,11 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .main-wrapper {
-  width: 320px;
   margin: 0 auto;
 
   background-color: #ffffff;

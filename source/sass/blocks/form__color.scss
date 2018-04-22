@@ -10,6 +10,9 @@
 }
 
 .form__text-color {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -20,34 +23,26 @@
   padding: 0;
 }
 
-.form__text-color  {
-    display: block;
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
-
 .form__item-color[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
-
-.form__item-color[type="checkbox"] + .form__text-color:before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    margin-right: 8px;
-    vertical-align: middle;
-    border: 3px solid #ffffff;
-    box-shadow: 0 0 0 3px #bdc3c7;
+.form__item-color[type="checkbox"] + .form__text-color::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 3px #bdc3c7;
 }
 
-
-.form__item-color[type="checkbox"]:checked  + .form__text-color:before {
-    background: black;
-    box-shadow: 0 0 0 3px #1abc9c;
+.form__item-color[type="checkbox"]:checked + .form__text-color::before {
+  background: black;
+  box-shadow: 0 0 0 3px #1abc9c;
 }
 
-.form__item-color[type="checkbox"]:checked + .form__text-color{
-    color: #1abc9c;
+.form__item-color[type="checkbox"]:checked + .form__text-color {
+  color: #1abc9c;
 }
