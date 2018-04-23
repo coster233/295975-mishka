@@ -1,8 +1,16 @@
-.goods__slogan {
+.goods__preview {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  width: 320px;
+  height: 284px;
+  background-position: -124px -17px;
+}
+
+.goods__preview-title {
   text-align: center;
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
+  padding-top: 70px;
 }
 
 .goods__list {
@@ -11,11 +19,27 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #63d1bb;
+  background-color: $green;
   color: #ffffff;
 }
 
+.goods__item--interior {
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  background-position: 260px 14px;
+}
+
+.goods__item--toys {
+  background-color: #56c3b2;
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  background-position: 247px 14px;
+}
+
 .goods__title {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
   width: 100px;
   padding-left: 28px;
 }

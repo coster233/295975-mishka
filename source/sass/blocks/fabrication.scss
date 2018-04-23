@@ -1,8 +1,13 @@
 .fabrication {
   padding-left: 30px;
   padding-right: 30px;
+  min-height: 490px;
+  margin-bottom: 30px;
+}
+
+.fabrication__wrapper {
   border: 1px solid #ededed;
-  height: 454px;
+  min-height: 500px;
 }
 
 .fabrication__title {
@@ -10,22 +15,40 @@
   line-height: 24px;
   width: 135px;
   padding-left: 90px;
+  position: relative;
+}
+
+.fabrication__title::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 40px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 32px;
+  height: 30px;
+  background-image: url("../img/icon-video.svg");
 }
 
 .fabrication__content {
+  padding-left: 28px;
+  text-align: left;
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: $grey;
   margin-top: 30px;
   margin-bottom: 30px;
+  width: 191px;
 }
 
 .fabrication__buy {
-  font-size: 17px;
-  line-height: 16px;
+  width: 188px;
+  margin: 0 auto;
   text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
   color: #444444;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-left: 33px;
+  display: block;
+  text-align: center;
 }

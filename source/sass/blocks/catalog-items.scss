@@ -13,9 +13,14 @@
   padding: 0;
 }
 
-.catalog-items__exposition,
+.catalog-items__exposition {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
 .catalog-items__buy {
   padding-left: 30px;
+  padding-bottom: 20px;
 }
 
 .catalog-items__title {
@@ -26,7 +31,7 @@
 .catalog-items__parameters {
   font-size: 13px;
   line-height: 30px;
-  color: #444444;
+  color: $grey;
 }
 
 .catalog-items__price {

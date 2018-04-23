@@ -2,10 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <link href="css/style.css" rel="stylesheet">
     <div class="main-wrapper">
     <header class="page-header">
       <a class="page-header__logo">
@@ -48,14 +51,11 @@
     <main class="page-main">
       <h1 class="visually-hidden">Мишка – вязанные изделия ручной работы</h1>
       <section class="goods">
-        <img src="img/hero-mobile@1x.jpg" width="320" height="283" alt="Дом с игрушками">
-        <div class="goods__slogan">
-          <p>Милые штуки</p>
-          <p>ручной</p>
-          <p>работы для дома</p>
+        <div class="goods__preview">
+          <p class="goods__preview-title">Милые штуки ручной работы для дома</p>
         </div>
           <ul class="goods__list">
-            <li class="goods__item product__item-interior">
+            <li class="goods__item goods__item--interior">
               <p class="goods__title">Предметы интерьера</p>
             </li>
             <li class="goods__item goods__item--toys">
@@ -109,26 +109,22 @@
       <h2 class="advantages__title">Коротко о нас</h2>
       <ul class="advantages__list">
       <li class="advantages__item">
-        <p class="advantages__description">Экологически чистые материалы</p>
+        <p class="advantages__description advantages__description--eco">Экологически чистые материалы</p>
       </li>
       <li class="advantages__item">
-        <p class="advantages__description">Скандинавский стиль по российской цене</p>
+        <p class="advantages__description advantages__description--money">Скандинавский стиль по российской цене</p>
       </li>
       <li class="advantages__item">
-
-        <p class="advantages__description">Увеличивает лайкина фотографиях</p>
-
-        <p class="advantages__description">Увеличивает лайки на фотографиях</p>
-
+        <p class="advantages__description advantages__description--like">Увеличивает лайкина фотографиях</p>
       </li>
       <li class="advantages__item">
-        <p class="advantages__description">Связано вручную с любовью и умилением</p>
+        <p class="advantages__description advantages__description--knitting">Связано вручную с любовью и умилением</p>
       </li>
       <li class="advantages__item">
-        <p class="advantages__description">Поддержка отечественного производителя</p>
+        <p class="advantages__description advantages__description--domestic">Поддержка отечественного производителя</p>
       </li>
       <li class="advantages__item">
-        <p class="advantages__description">Поставляется в подарочной упаковке</p>
+        <p class="advantages__description advantages__description--gift">Поставляется в подарочной упаковке</p>
       </li>
       </ul>
     </section>
@@ -140,8 +136,17 @@
         <span class="reviews__author-adress">@misssssiskras</span>
       </blockquote>
       <div class="reviews__wrapper">
-      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-      <button class="reviews__next" type="button">Следующий отзыв</button>
+      <button class="reviews__prev" type="button">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+          <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
+        </svg>
+      </button>
+      <button class="reviews__next" type="button">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+          <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
+        </svg>
+
+      </button>
       </div>
       <a class="reviews__write button" href="#">Написать</a>
     </section>
@@ -153,8 +158,8 @@
     <b class="contacts__title">Контакты</b>
     <ul class="contacts__list">
       <li class="contacts__item">
-        <span class="contacts__item__email">e-mail:</span>
-        <span class="contacts__item__email-adress">info@mimimishkashop.ru</span>
+        <span class="contacts__adress">e-mail:</span>
+        <span class="contacts__adress-email">info@mimimishkashop.ru</span>
       </li>
       <li class="contacts__item">
         <span class="contacts__adress">адрес:</span>
@@ -211,12 +216,16 @@
         </a>
       </li>
     </ul>
-  <div class="page-footer__copyright copyright">
-    <b class="copyright__text">Разработано:</b>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
-    </a>
-  </div>
+    <ul class="page-footer__list copyright">
+      <li class="page-footer__items">
+      <b class="copyright__text">Разработано:</b>
+    </li>
+    <li class="page-footer__items">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+      </a>
+    </li>
+  </ul>
 </footer>
 
 </div>

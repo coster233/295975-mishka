@@ -1,10 +1,236 @@
 .form {
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .form__description {
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: $grey;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.form__color {
+  border: none;
+  padding: 0;
+}
+
+.form__color-title {
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
+}
+
+.form__text-color {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.form__list-color {
+  list-style: none;
+  padding: 0;
+}
+
+.form__item-color[type="checkbox"] {
+  display: none;
+}
+
+.form__item-color[type="checkbox"] + .form__text-color::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 3px #bdc3c7;
+}
+
+.form__item-color[type="checkbox"]:checked + .form__text-color::before {
+  background: black;
+  box-shadow: 0 0 0 3px #1abc9c;
+}
+
+.form__item-color[type="checkbox"]:checked + .form__text-color {
+  color: #1abc9c;
+}
+
+.form__communication-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__communication-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form__communication-text {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.form__communication-entry {
+  border: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  font-size: 17px;
+  color: $grey;
+  line-height: 18px;
+}
+
+.form__review {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.form__review-text {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.form__review-textarea {
+  border: 2px solid black;
+  width: 260px;
+  height: 142px;
+  font-size: 17px;
+  color: $grey;
+  line-height: 18px;
+}
+
+.form__comment {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $grey;
+}
+
+.form__submit {
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $grey;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.form__type {
+  border: none;
+  padding: 0;
+}
+
+.form__title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
+  text-transform: uppercase;
+}
+
+.form__text-type {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.form__list-type {
+  list-style: none;
+  padding: 0;
+}
+
+.form__item-type[type="radio"] {
+  display: none;
+}
+
+.form__item-type[type="radio"] + .form__text-type::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 3px #bdc3c7;
+  border-radius: 50%;
+}
+
+.form__item-type[type="radio"]:checked + .form__text-type::before {
+  background: black;
+  box-shadow: 0 0 0 3px #1abc9c;
+}
+
+.form__item-type[type="radio"]:checked + .form__text-type {
+  color: #1abc9c;
+}
+
+.form__user {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__user-text {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.form__user-login {
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
+}
+
+.form__user-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__user-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+.form__user-entry {
+  border: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  font-size: 17px;
+  color: $grey;
+  line-height: 18px;
 }

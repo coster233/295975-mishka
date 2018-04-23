@@ -6,18 +6,20 @@
 .goods-week__products {
   font-size: 25px;
   line-height: 30px;
+  margin-bottom: 7px;
 }
 
 .goods-week__popular {
-  color: #63d1bb;
+  color: $green;
   font-size: 17px;
   line-height: 20px;
+  text-transform: uppercase;
 }
 
 .goods-week__description {
   font-size: 16px;
   line-height: 24px;
-  color: #444444;
+  color: $grey;
 }
 
 .goods-week__portrait {
@@ -42,7 +44,10 @@
   text-align: center;
   font-size: 17px;
   line-height: 24px;
-  color: #444444;
+  color: $grey;
+  font-weight: bold;
+  padding-bottom: 38px;
+  padding-top: 27px;
 }
 
 .goods-week_order {
@@ -50,13 +55,13 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  color: #444444;
+  color: $grey;
   display: block;
   text-align: center;
 }
 
 .button {
-  border: 2px solid #444444;
+  border: 2px solid $grey;
   padding-top: 17px;
   padding-bottom: 17px;
 }

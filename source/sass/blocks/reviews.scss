@@ -10,25 +10,28 @@
 .reviews__text {
   font-size: 15px;
   line-height: 30px;
-  color: #444444;
+  color: $grey;
 }
 
 .reviews__author-name {
   font-size: 17px;
   line-height: 24px;
   font-style: normal;
+  font-weight: bold;
   color: #000000;
 }
 
 .reviews__author-adress {
   font-size: 17px;
   line-height: 30px;
-  color: #444444;
+  color: $grey;
 }
 
 .reviews__wrapper {
   display: flex;
   width: 260px;
+  padding-bottom: 37px;
+  padding-top: 30px;
 }
 
 .reviews__prev,
@@ -40,7 +43,9 @@
 }
 
 .reviews__write {
-  color: #444444;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $grey;
   font-size: 18px;
   line-height: 20px;
   width: 256px;

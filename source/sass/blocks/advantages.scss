@@ -6,6 +6,7 @@
 .advantages__title {
   font-size: 25px;
   line-height: 30px;
+  margin-bottom: 51px;
 }
 
 .advantages__list {
@@ -15,8 +16,55 @@
   padding: 0;
 }
 
+.advantages__item {
+  padding-bottom: 40px;
+}
+
 .advantages__description {
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+  position: relative;
+}
+
+.advantages__description--eco::before {
+  @include position;
+  width: 32px;
+  height: 37px;
+  background-image: url("../img/icon-feature-flower.svg");
+}
+
+.advantages__description--money::before {
+  @include position;
+  width: 47px;
+  height: 27px;
+  background-image: url("../img/icon-feature-money.svg");
+}
+
+.advantages__description--like::before {
+  @include position;
+  width: 34px;
+  height: 27px;
+  background-image: url("../img/icon-feature-heart.svg");
+}
+
+.advantages__description--knitting::before {
+  @include position;
+  width: 35px;
+  height: 34px;
+  background-image: url("../img/icon-feature-ball.svg");
+}
+
+.advantages__description--domestic::before {
+  @include position;
+  width: 55px;
+  height: 33px;
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.advantages__description--gift::before {
+  @include position;
+  width: 33px;
+  height: 32px;
+  background-image: url("../img/icon-feature-gift.svg");
 }
