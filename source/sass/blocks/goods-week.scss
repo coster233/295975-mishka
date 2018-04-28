@@ -65,3 +65,95 @@
   padding-top: 17px;
   padding-bottom: 17px;
 }
+
+@media (min-width: $tablet-width) {
+  .goods-week {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .goods-week__products-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+  }
+  .goods-week__products {
+    margin-top: 0;
+    width: 87%;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .goods-week__popular {
+    text-align: center;
+  }
+  .goods-week_price {
+    padding-top: 126px;
+  }
+  .goods-week {
+    position: relative;
+  }
+  .goods-week__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .goods-week__container-wrapper {
+    width: 291px;
+    padding-bottom: 51px;
+  }
+  .goods-week__product {
+    width: 333px;
+    height: 404px;
+    padding-top: 24px;
+  }
+  .goods-week::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: -23px;
+    width: 100%px;
+    height: 23px;
+    background-image: url("../img/bg-zigzag-line.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-week {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 636px;
+    padding-top: 86px;
+  }
+  .goods-week__products-wrapper {
+    flex-direction: row-reverse;
+    z-index: 1;
+  }
+  .goods-week__container {
+    padding-left: 124px;
+  }
+  .goods-week__products {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .goods-week_price {
+    padding-top: 178px;
+  }
+  .goods-week__product {
+  display: none;
+  }
+  .goods-week__container-wrapper {
+    position: relative;
+    padding-bottom: 0;
+  }
+  .goods-week__container-wrapper::before {
+    position: absolute;
+    content: "";
+    top: -156px;
+    left: 399px;
+    width: 525px;
+    height: 636px;
+    z-index: 0;
+    background-image: url(../img/triple-set-desktop.jpg);
+  }
+}

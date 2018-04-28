@@ -234,3 +234,84 @@
   color: $grey;
   line-height: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .form__type {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 533px;
+
+  }
+  .form__text-type {
+    font-size: 19px;
+    line-height: 18px;
+  }
+  .form__text-color {
+    font-size: 19px;
+    line-height: 18px;
+  }
+  .form__color {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  }
+  .form__list-color {
+    display: flex;
+    flex-wrap: wrap;
+    width: 63%;
+  }
+  .form__items-color {
+    width: 204px;
+  }
+  .form__user {
+    display: flex;
+    align-items: baseline;
+
+  }
+  .form__user-text {
+    font-size: 19px;
+    line-height: 18px;
+  }
+  .form__user-entry {
+    width: 100%;
+  }
+  .form__user-list {
+    width: 500px;
+    margin-left: auto;
+  }
+  .form__user-name {
+    display: flex;
+    flex-direction: row;
+  }
+  .form__communication-item {
+    display: flex;
+    flex-direction: row;
+  }
+  .form__communication-entry {
+    width: 76%;
+    margin-left: auto;
+  }
+  .form__review {
+    display: flex;
+    flex-direction: row;
+  }
+  .form__review-textarea {
+    margin-left: auto;
+    width: 75%;
+  }
+  .form__comment-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding-top: 50px;
+  }
+  .form__submit {
+    width: 236px;
+    margin-right: auto;
+  }
+}

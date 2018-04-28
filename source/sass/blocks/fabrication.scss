@@ -52,3 +52,30 @@
   display: block;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .fabrication {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .fabrication__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .fabrication__title {
+    order: 1;
+    width: 50%;
+  }
+  .fabrication__text {
+    order: 2;
+  }
+  .fabrication__content {
+    width: 72%;
+  }
+  .fabrication__buy {
+    width: 92%;
+  }
+  .fabrication__title::before {
+    top: -7px;
+  }
+}

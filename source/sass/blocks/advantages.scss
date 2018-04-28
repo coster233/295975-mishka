@@ -68,3 +68,25 @@
   height: 32px;
   background-image: url("../img/icon-feature-gift.svg");
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding-top: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .advantages-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .advantages__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .advantages__list {
+    width: 294px;
+  }
+  .advantages__description {
+    font-size: 20px;
+  }
+}

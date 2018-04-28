@@ -10,6 +10,8 @@
   <body>
     <div class="main-wrapper">
       <header class="page-header">
+        <div class="page-header-wrapper">
+        <div class="page-header__logo-wrapper header-border">
         <a class="page-header__logo">
           <svg class="page-header__mishka" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.589px" height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve">
             <g>
@@ -25,26 +27,53 @@
           </svg>
 
         </a>
+      </div>
+      <div class="main-nav__wrapper">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            <ul class="main-nav__list site-list site-list--main-nav">
+              <li class="site-list__item site-list__item--catalog">
+                <a class="site-list__link site-list__link--main-nav" href="catalog.html">Каталог товаров</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Вязание на заказ</a>
-              </li>
-              <li class="site-list__item site-list__item--search">
-                <a class="site-list__link" href="catalog.html">Поиск по сайту</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Корзина: пока пуста</a>
+                <a class="site-list__link site-list__link--main-nav" href="catalog.html">Вязание на заказ</a>
               </li>
             </ul>
-          </div>
         </nav>
+      </div>
+
+      <div class="page-header__cart-wrapper header-border">
+        <ul class="main-nav__list site-list site-list--user-nav">
+          <li class="site-list__item site-list__item--search">
+            <svg class="site-list__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+              <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+            </svg>
+
+            <a class="site-list__link site-list__link--search" href="catalog.html">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item site-list__item--user">
+            <svg class="site-list__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+              <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+            </svg>
+
+
+            <a class="site-list__link site-list__link--cart" href="catalog.html">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-nav__wrapper main-nav__wrapper--sale">
+        <nav class="main-nav">
+            <ul class="main-nav__list site-list site-list--main-nav">
+              <li class="site-list__item site-list__item--catalog">
+                <a class="site-list__link site-list__link--main-nav" href="catalog.html">Новые поступления</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--main-nav" href="catalog.html">Распродажа</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+      <p class="page-header__delivery">Бесплатная доставка по России</p>
+      </div>
       </header>
 
     <main class="page-main">
@@ -54,7 +83,7 @@
       <section class="form">
         <form class="form__order" action="https://echo.htmlacademy.ru" method="post">
           <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <fieldset class="form__type">
+          <div class="form__type">
             <legend class="form__title">Тип</legend>
             <ul class="form__list-type">
               <li class="form__items-type">
@@ -68,9 +97,9 @@
                 <label class="form__text-type" for="form__toy">Детская игрушка</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
 
-          <fieldset class="form__color">
+          <div class="form__color">
             <legend class="form__title">Цвет</legend>
             <ul class="form__list-color">
               <li class="form__items-color">
@@ -100,8 +129,8 @@
               <label class="form__text-color" for="form-orange">Оранжевый</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="form__user">
+        </div>
+        <div class="form__user">
           <legend class="form__title">ФИО</legend>
           <ul class="form__user-list">
             <li class="form__user-name">
@@ -118,8 +147,8 @@
               <input class="form__user-entry" type="text" name="name" id="name" placeholder="Отчество, если желаете">
           </li>
         </ul>
-      </fieldset>
-      <fildset class="form__communication">
+      </div>
+      <div class="form__communication">
         <ul class="form__communication-list">
           <li class="form__communication-item">
             <label class="form__communication-text" for="name">Тел</label>
@@ -130,18 +159,24 @@
             <input class="form__communication-entry" id="email" type="text" name="email" placeholder="Ваш Email*">
           </li>
         </ul>
-      </fildset>
-      <fieldset class="form__review">
+      </div>
+      <div class="form__review">
         <label class="form__review-text" for="review">Доп</label>
         <textarea class="form__review-textarea" name="review" id="review" rows="5">Опишите все ваши пожелания к заказу
         </textarea>
+        <div class="form__comment-wrapper">
         <span class="form__comment">*Поля обязательны для заполнения</span>
         <button class="form__submit button" type="submit">Отправить заказ</button>
-      </fieldset>
+      </div>
+    </div>
     </form>
   </section>
   </main>
   <footer class="page-footer__social social">
+    <a class="page-footer__logo" href="#">
+      <img src="img/logo-footer.jpg" width="102"
+      height="34" alt="логотип Мишки">
+    </a>
     <ul class="social__list">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Инстаграме
@@ -177,17 +212,17 @@
         </a>
       </li>
     </ul>
-  <ul class="page-footer__list copyright">
+    <ul class="page-footer__list copyright">
+      <li class="page-footer__items">
+      <b class="copyright__text">Разработано:</b>
+    </li>
     <li class="page-footer__items">
-    <b class="copyright__text">Разработано:</b>
-  </li>
-  <li class="page-footer__items">
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
-    </a>
-  </li>
-</ul>
-  </footer>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+      </a>
+    </li>
+  </ul>
+</footer>
   </div>
   </body>
   </html>
