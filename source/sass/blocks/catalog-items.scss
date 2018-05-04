@@ -71,3 +71,14 @@
     margin-top: 0;
   }
 }
+@media (min-width: $desktop-width) {
+  .catalog-items__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .catalog-items__item {
+    flex-direction: column;
+  }
+
+}

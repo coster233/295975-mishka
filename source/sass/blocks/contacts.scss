@@ -2,6 +2,13 @@
   padding-top: 40px;
 }
 
+.contacts__map--table {
+  display: none;
+}
+.contacts__map--desktop {
+  display: none;
+}
+
 .contacts__main {
   padding-left: 30px;
   padding-right: 30px;
@@ -65,10 +72,7 @@
     display: block;
     padding-bottom: 63px;
   }
-  .contacts__map--desktop
-  {
-    display: none;
-  }
+
   .contacts__title::before {
     position: absolute;
     content: "";
@@ -83,6 +87,9 @@
   }
   .contacts__map {
     display: none;
+  }
+  .contacts__map--table {
+    display: block;
   }
 
   .contacts__connection-wrapper {

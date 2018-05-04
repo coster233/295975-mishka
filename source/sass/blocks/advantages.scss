@@ -90,3 +90,15 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding: 0 100px;
+  }
+  .advantages__title {
+    padding: 0 175px;
+  }
+  .advantages-wrapper {
+    padding: 0 175px;
+  }
+}

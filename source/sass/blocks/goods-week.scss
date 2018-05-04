@@ -2,6 +2,9 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+.goods-week__product--desktop {
+  display: none;
+}
 
 .goods-week__products {
   font-size: 25px;
@@ -121,20 +124,25 @@
   .goods-week {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     min-height: 636px;
     padding-top: 86px;
+    padding: 0 100px;
+
   }
   .goods-week__products-wrapper {
     flex-direction: row-reverse;
     z-index: 1;
+    padding-left: 120px;
   }
   .goods-week__container {
-    padding-left: 124px;
+    padding-left: 180px;
   }
   .goods-week__products {
     font-size: 53px;
     line-height: 57px;
+    white-space: nowrap;
+    z-index: 1;
+    padding-left: 65px;
   }
   .goods-week_price {
     padding-top: 178px;
@@ -142,18 +150,16 @@
   .goods-week__product {
   display: none;
   }
+  .goods-week__product--desktop {
+  display: block;
+  width: 525px;
+  height: 636px;
+  }
   .goods-week__container-wrapper {
     position: relative;
     padding-bottom: 0;
   }
-  .goods-week__container-wrapper::before {
-    position: absolute;
-    content: "";
-    top: -156px;
-    left: 399px;
-    width: 525px;
-    height: 636px;
-    z-index: 0;
-    background-image: url(../img/triple-set-desktop.jpg);
+  .goods-week__wrapper {
+    width: 50%;
   }
 }

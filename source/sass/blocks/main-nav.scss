@@ -66,13 +66,7 @@
     min-height: 89px;
     display: flex;
   }
-  .page-header__cart-wrapper {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    border-bottom: 1px solid #ececec;
-    order: 2;
-  }
+
   .main-nav {
     display: flex;
     flex-direction: row-reverse;
@@ -135,17 +129,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header-wrapper {
-    padding: 0 100px;
-  }
+
   .main-nav__wrapper {
     order: 1;
-    width: 384px;
+    width: 380px;
     padding: 0;
   }
-  .page-header__cart-wrapper {
-    width: 350px;
-  }
+
   .main-nav__wrapper.main-nav__wrapper--sale {
     order: 4;
     display: block;

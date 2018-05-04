@@ -315,3 +315,40 @@
     margin-right: auto;
   }
 }
+@media (min-width: $desktop-width) {
+  .form__description {
+    padding-left: 176px;
+    width: 700px;
+  }
+  .form__type {
+    justify-content: normal;
+  }
+  .form__title {
+    width: 175px;
+    text-align: center;
+  }
+  .form__color {
+    justify-content: normal;
+  }
+  .form__user-list {
+    margin-left: 0;
+  }
+  .form__communication-text {
+    width: 175px;
+    text-align: center;
+  }
+  .form__communication-entry {
+    margin-left: 0;
+  }
+  .form__review-text {
+    width: 175px;
+    text-align: center;
+  }
+  .form__review-textarea {
+    margin-left: 0;
+  }
+  .form__comment-wrapper {
+    padding-left: 175px;
+    width: 700px;
+  }
+}
