@@ -1,27 +1,55 @@
 .page-main__head {
-  height: 175px;
+  height: 178px;
   background-color: #f1f1f1;
 }
 
 .page-main__title {
   font-size: 27px;
   line-height: 30px;
-  padding-top: 70px;
+  padding-top: 71px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .page-main {
+    margin-top: -16px;
+  }
+
   .page-main__head {
     position: relative;
+    min-height: 224px;
   }
+
+  .page-main__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 94px;
+  }
+
   .page-main__head::after {
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: -22px;
     left: 0;
     right: 0;
     width: 100%;
     height: 34px;
-    background-image: url("../img/bg-zigzag-fill.svg");
+    background-image: url("../img/big-zigzag-fill.svg");
+    background-repeat: no-repeat;
   }
+}
+
+@media (min-width: $desktop-width) {
+    .page-main__head {
+      min-height: 254px;
+    }
+
+    .page-main__title {
+      font-size: 53px;
+      line-height: 57px;
+      padding-right: 49px;
+    }
+    .page-main__head::after {
+      bottom: -16px;
+    }
 }

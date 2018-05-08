@@ -40,5 +40,11 @@ img {
   clip-path: inset(100%);
 }
 
+.button {
+  border: 2px solid $grey;
+  padding-top: 15px;
+  padding-bottom: 17px;
+}
+
 $tablet-width: 768px;
 $desktop-width: 1200px;

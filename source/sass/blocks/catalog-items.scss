@@ -1,11 +1,16 @@
 .catalog-items {
   padding-left: 30px;
   padding-right: 30px;
+  margin-top: 30px;
 }
 
 .catalog-items__item {
   border: 1px solid #ededed;
   margin-bottom: 30px;
+}
+
+.catalog-items__wrapper {
+  padding-top: 13px;
 }
 
 .catalog-items__list {
@@ -14,23 +19,28 @@
 }
 
 .catalog-items__exposition {
-  padding-left: 30px;
-  padding-bottom: 30px;
+  padding-left: 27px;
+  padding-bottom: 19px;
 }
 
 .catalog-items__buy {
-  width: 196px;
-  margin-left: 30px;
+  margin-left: 28px;
+  margin-right: 28px;
   border-top: 1px solid #ededed;
-  height: 80px;
+  height: 72px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.catalog-items__basket {
+  margin-left: auto;
 }
 
 .catalog-items__title {
   font-size: 17px;
   line-height: 24px;
+  margin-bottom: 5px;
+  width: 201px;
 }
 
 .catalog-items__parameters {
@@ -50,22 +60,46 @@
   .catalog-items {
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 79px;
   }
   .catalog-items__item {
     display: flex;
-    margin-top: 100px;
+    margin-top: 52px;
   }
   .catalog-items__wrapper {
     display: flex;
     flex-direction: column;
+    padding-top: 8px;
   }
   .catalog-items__picture {
+    display: none;
+  }
+
+  .catalog-items__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 242px;
+  }
+
+  .catalog-items__parameters {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .catalog-items__picture--tablet {
+    display: block;
     width: 334px;
     height: 334px;
   }
+
+  .catalog-items__price {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
   .catalog-items__buy {
     margin-top: auto;
-    width: 280px;
+    width: 273px;
   }
   .page-main__title {
     margin-top: 0;
@@ -75,10 +109,35 @@
   .catalog-items__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
   .catalog-items__item {
     flex-direction: column;
+    width: 316px;
+    margin-right: 48px;
+  }
+
+  .catalog-items {
+    margin-top: 75px;
+  }
+
+  .catalog-items__exposition {
+    padding-left: 27px;
+    padding-bottom: 0;
+    height: 113px;
+  }
+
+  .catalog-items__buy {
+    width: 256px;
+  }
+
+  .catalog-items__picture--tablet {
+    display: none;
+  }
+
+  .catalog-items__picture--desktop {
+    display: block;
+    width: 316px;
+    height: 462px;
   }
 
 }
