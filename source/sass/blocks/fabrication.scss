@@ -14,7 +14,8 @@
   display: none;
 }
 
-.catalog-items__picture--desktop {
+
+.fabrication__illustration--tablet {
   display: none;
 }
 
@@ -92,6 +93,7 @@
   }
 
   .fabrication__illustration--tablet {
+    display: block;
     width: 668px;
     height: 455px;
     order: 1;

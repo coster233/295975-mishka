@@ -65,7 +65,21 @@
       border: 2px solid #444444;
 }
 
+.form__item-color[type="checkbox"] + .form__text-color::after {
+      position: absolute;
+      content: "";
+      width: 37px;
+      height: 37px;
+      background-image: url("../img/tick-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      left: 10px;
+      top: 10px;
+}
 
+.form__item-color[type="checkbox"]:checked + .form__text-color::after {
+  display: block;
+}
 
 .form__communication-list {
   display: flex;
@@ -167,6 +181,7 @@
   color: $grey;
   line-height: 18px;
   margin-top: 4px;
+  box-sizing: border-box;
 }
 
 .form__comment {
@@ -257,6 +272,22 @@
   border-radius: 50%;
 }
 
+.form__item-type[type="radio"] + .form__text-type::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 41px;
+  background-color: #63d1bb;
+  border-radius: 50%;
+  vertical-align: middle;
+  display: none;
+}
+
+.form__item-type[type="radio"]:checked + .form__text-type::after {
+  display: block;
+}
+
 
 .form__user {
   margin: 0;
@@ -305,8 +336,9 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 49px;
   }
 
   .form__type {
@@ -315,12 +347,21 @@
     width: 533px;
     margin-top: 7px;
     align-items: normal;
+    margin-bottom: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .form__title {
+    padding-top: 45px;
   }
 
   .form__description {
     font-size: 17px;
     line-height: 30px;
     padding-top: 49px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .form__list-type {
@@ -355,7 +396,7 @@
     font-size: 19px;
     line-height: 18px;
     width: 360px;
-    margin-top: 11px;
+    margin-top: 28px;
   }
 
   .form__item-type[type="radio"] + .form__text-type::before {
@@ -363,31 +404,57 @@
     height: 48px;
   }
 
+  .form__item-type[type="radio"] + .form__text-type::after {
+    left: 236px;
+  }
+
   .form__text-color {
     font-size: 19px;
     line-height: 18px;
+    margin-top: 0;
   }
 
   .form__color {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+    display: flex;
+    align-items: normal;
+    padding-left: 50px;
+    padding-right: 0px;
+    background-color: #f1f1f1;
+    margin-top: 24px;
+    padding-top: 23px;
+    padding-bottom: 10px;
   }
 
   .form__list-color {
     display: flex;
     flex-wrap: wrap;
-    width: 63%;
+    margin-left: 119px;
+  }
+  .form__text-colour {
+    padding-left: 80px;
+  }
+
+  .form__text-color {
+    padding-top: 18px;
+  }
+
+  .form__item-color[type="checkbox"] + .form__text-color::before {
+    width: 49px;
+    height: 49px;
   }
 
   .form__items-color {
     width: 204px;
+    margin-bottom: 35px;
+    margin-right: 58px;
   }
 
   .form__user {
     display: flex;
     align-items: baseline;
-
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 23px;
   }
 
   .form__user-text {
@@ -397,31 +464,71 @@
 
   .form__user-entry {
     width: 100%;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 18px;
+    margin-left: 23px;
+    padding-bottom: 11px;
   }
 
   .form__user-list {
     width: 500px;
-    margin-left: auto;
+    margin-left: 122px;
   }
 
   .form__user-name {
     display: flex;
     flex-direction: row;
+    padding-bottom: 40px;
+  }
+
+  .form__communication {
+    background-color: #f1f1f1;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 9px;
+    padding-bottom: 26px;
+  }
+
+  .form__communication-list {
+    padding-top: 57px;
+  }
+
+  .form__communication-entry {
+    background-color: #f1f1f1;
+    margin-left: 96px;
+    padding-left: 18px;
+    width: 500px;
+    height: 40px;
+    padding-bottom: 0;
   }
 
   .form__communication-item {
     display: flex;
     flex-direction: row;
+    padding-top: 3px;
   }
 
-  .form__communication-entry {
-    width: 76%;
-    margin-left: auto;
+  .form__communication-text {
+    width: 74px;
+  }
+
+  .form__communication-phone {
+    right: 25px;
+    height: 38px;
+  }
+
+  .form__communication-mail {
+    height: 48px;
+    right: 23px;
   }
 
   .form__review {
     display: flex;
     flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
   }
 
   .form__review-textarea {
@@ -432,47 +539,101 @@
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 0;
+    margin-top: 53px;
   }
   .form__submit {
-    width: 236px;
+    width: 230px;
     margin-right: auto;
+    margin-top: 0;
+  }
+
+  .form__comment {
+    font-size: 17px;
+    line-height: 30px;
+    align-self: center;
   }
 }
 @media (min-width: $desktop-width) {
   .form__description {
-    padding-left: 176px;
-    width: 700px;
+      padding-left: 227px;
+      padding-top: 100px;
+      width: 700px;
   }
   .form__type {
     justify-content: normal;
+    padding-left: 111px;
   }
+
+  .form__list-type {
+    margin-left: 75px;
+  }
+
+  .form__item-type[type="radio"] + .form__text-type::after {
+    left: 243px;
+  }
+
   .form__title {
-    width: 175px;
     text-align: center;
   }
   .form__color {
     justify-content: normal;
+    padding-top: 20px;
+    padding-left: 107px;
   }
+
+  .form__list-color {
+    margin-left: 72px;
+  }
+
+  .form__user {
+    padding-left: 109px;
+  }
+
   .form__user-list {
-    margin-left: 0;
+    margin-left: 71px;
+    width: 700px;
   }
+
+  .form__communication {
+    padding-left: 111px;
+  }
+
   .form__communication-text {
-    width: 175px;
-    text-align: center;
+    width: 114px;
+
   }
   .form__communication-entry {
     margin-left: 0;
+    width: 682px;
   }
+
+  .form__communication-item {
+    padding-top: 5px;
+  }
+
+  .form__communication-phone {
+    right: 234px;
+  }
+
+  .form__communication-mail {
+    right: 230px;
+  }
+
+  .form__review {
+    padding-left: 112px;
+    margin-top: 45px;
+  }
+
   .form__review-text {
-    width: 175px;
-    text-align: center;
+    width: 115px;
   }
   .form__review-textarea {
     margin-left: 0;
+    width: 700px;
   }
   .form__comment-wrapper {
-    padding-left: 175px;
+    padding-left: 113px;
     width: 700px;
   }
 }
