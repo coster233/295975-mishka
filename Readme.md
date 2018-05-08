@@ -2,10 +2,14 @@
 
 * Студент: [Артур Шах](https://up.htmlacademy.ru/adaptive/14/user/295975).
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Наставник: [Александр Распономарев](https://htmlacademy.ru/profile/id64492) .
 =======
 * Наставник: [Александр Распономарев] (https://htmlacademy.ru/profile/id64492).
 >>>>>>> c6f2e1a732cef6b8651bbb2e80447452352b121b
+=======
+* Наставник: [Александр Распономарев] (https://htmlacademy.ru/profile/id64492).
+>>>>>>> a1fbf79e68878f46838efab616129228045a973d
 
 ---
 
