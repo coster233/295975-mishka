@@ -66,6 +66,7 @@
 }
 
 .form__item-color[type="checkbox"] + .form__text-color::after {
+  display: none;
       position: absolute;
       content: "";
       width: 37px;
