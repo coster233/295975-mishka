@@ -5,6 +5,10 @@
   height: 284px;
   background-position: -124px -17px;
   background-repeat: no-repeat;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+background-image: url("img/photo-bowl-mobile@2x.jpg");
+width: auto;
+height: 284px;
   }
   .goods__preview-hand {
     width: 121px;
@@ -63,6 +67,10 @@
     background-position: 0px -17px;
     background-repeat: no-repeat;
     position: relative;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  background-image: url("img/photo-bowl-tablet@2x.jpg");
+  width: 768px;
+  height: 746px;
   }
   .goods::before {
     position: absolute;
@@ -125,6 +133,11 @@
     background-repeat: no-repeat;
     position: relative;
     background-color: #f9f9f9;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  background-image: url("img/photo-bowl-desktop@2x.jpg");
+  width: 100%;
+  height: 746px;
+}
   }
   .goods__list-wrapper {
   padding-left: 100px;
