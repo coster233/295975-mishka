@@ -92,12 +92,10 @@
     height: 457px;
     z-index: -1;
     background-image: url("../img/review@1x.jpg");
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   background-image: url("img/review@2x.jpg");
-  width: 350px;
-  height: 457px;
-
 }
+  }
   .reviews__description-wrapper {
   display: flex;
   flex-direction: row;
