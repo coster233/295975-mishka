@@ -6,7 +6,9 @@
     background-position: -124px -17px;
     background-repeat: no-repeat;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-position: -55px 0px;
+    background-size: cover;
   }
 }
   .goods__preview-hand {
@@ -66,6 +68,12 @@
     background-position: 0px -17px;
     background-repeat: no-repeat;
     position: relative;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-tablet@2x.jpg");
+    background-position: -189px 0px;
+    background-size: cover;
+  }
+
   }
   .goods::before {
     position: absolute;
@@ -128,6 +136,11 @@
     background-repeat: no-repeat;
     position: relative;
     background-color: #f9f9f9;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-desktop@2x.jpg");
+    background-position: 0px 0px;
+    background-size: cover;
+  }
   }
   .goods__list-wrapper {
   padding-left: 100px;
