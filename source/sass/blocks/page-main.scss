@@ -1,3 +1,8 @@
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-main__head {
   height: 178px;
   background-color: #f1f1f1;
@@ -13,11 +18,14 @@
 @media (min-width: $tablet-width) {
   .page-main {
     margin-top: -16px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   .page-main__head {
     position: relative;
     min-height: 224px;
+    margin-top: -15px;
   }
 
   .page-main__title {
@@ -40,6 +48,11 @@
 }
 
 @media (min-width: $desktop-width) {
+    .page-main {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
     .page-main__head {
       min-height: 254px;
     }
