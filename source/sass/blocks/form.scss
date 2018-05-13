@@ -2,7 +2,7 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 21px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
 }
 
 .form__description {
@@ -68,8 +68,8 @@
 .form__item-color[type="checkbox"] + .form__text-color::after {
       position: absolute;
       content: "";
-      width: 37px;
-      height: 37px;
+      width: 22px;
+      height: 16px;
       background-image: url("../img/tick-mobile.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -177,7 +177,7 @@
 .form__review-textarea {
   border: 2px solid black;
   width: 260px;
-  min-height: 134px;
+  min-height: 142px;
   font-size: 17px;
   color: $grey;
   line-height: 18px;
@@ -410,6 +410,13 @@
     left: 16px;
   }
 
+  .form__item-color[type="checkbox"] + .form__text-color::after {
+    width: 33px;
+    height: 22px;
+    top: 17px;
+    left: 13px;
+  }
+
   .form__text-color {
     font-size: 19px;
     line-height: 18px;
@@ -536,13 +543,16 @@
   .form__review-textarea {
     margin-left: auto;
     width: 75%;
+    font-size: 19px;
+    padding-top: 8px;
+    padding-left: 19px;
   }
   .form__comment-wrapper {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
     padding-top: 0;
-    margin-top: 53px;
+    margin-top: 46px;
   }
   .form__submit {
     width: 230px;
@@ -634,5 +644,6 @@
   .form__comment-wrapper {
     padding-left: 113px;
     width: 700px;
+    margin-top: 40px;
   }
 }
