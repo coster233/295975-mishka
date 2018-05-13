@@ -8,12 +8,15 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="main-wrapper">
       <header class="page-header">
-        <div class="page-header-wrapper">
+        <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper header-border">
         <a class="page-header__logo" href="index.html">
-          
+
           <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <svg class="page-header__logo-desktop" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 148.1 72.7" style="enable-background:new 0 0 148.1 72.7;" xml:space="preserve">
           <style type="text/css">
@@ -119,9 +122,9 @@
           </g>
           </svg>
 
-          
+
           <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          
+
           <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <svg class="page-header__mishka--table" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="19.1 15 112.4 46.1" style="enable-background:new 19.1 15 112.4 46.1;" xml:space="preserve">
           <style type="text/css">
@@ -303,13 +306,13 @@
               <input class="form__user-entry" type="text" name="name" id="name" placeholder="Введите ваше имя*" required="">
             </li>
             <li class="form__user-name">
-              <label class="form__user-text" c="" for="name">Фамилия:</label>
-              <input class="form__user-entry" type="text" name="name" id="name" placeholder="Укажите фамилию*" required="">
+              <label class="form__user-text" for="surname">Фамилия:</label>
+              <input class="form__user-entry" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required="">
             </li>
             <li class="form__user-name">
 
-              <label class="form__user-text" for="name">Отчество:</label>
-              <input class="form__user-entry" type="text" name="name" id="name" placeholder="Отчество, если желаете">
+              <label class="form__user-text" for="patronymic">Отчество:</label>
+              <input class="form__user-entry" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
           </li>
         </ul>
       </div>
@@ -318,7 +321,7 @@
           <li class="form__communication-item">
             <label class="form__communication-text" for="name">Тел</label>
             <input class="form__communication-entry" id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ">
-            
+
             <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
             <svg class="form__communication-phone" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24.8 24.3" style="enable-background:new 0 0 24.8 24.3;" xml:space="preserve">
             <g>
@@ -340,13 +343,13 @@
           <li class="form__communication-item">
             <label class="form__communication-text" for="name">E-mail</label>
             <input class="form__communication-entry" id="email" type="text" name="email" placeholder="Ваш Email*">
-            
+
             <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
             <svg class="form__communication-mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
             <style type="text/css">
-            	.st0{fill:#333333;}
+            	.st-0{fill:#333333;}
             </style>
-            <path id="mail" class="st0" d="M28,5H4C1.8,5,0,6.8,0,9v13c0,2.2,1.8,4,4,4h24c2.2,0,4-1.8,4-4V9C32,6.8,30.2,5,28,5z M2,10.2l7,5.2
+            <path id="mail" class="st" d="M28,5H4C1.8,5,0,6.8,0,9v13c0,2.2,1.8,4,4,4h24c2.2,0,4-1.8,4-4V9C32,6.8,30.2,5,28,5z M2,10.2l7,5.2
             	l-7,5.2V10.2z M30,22c0,1.1-0.9,2-2,2H4c-1.1,0-2-0.9-2-2l7.8-5.9l4.4,3.3c0.5,0.4,1.2,0.6,1.8,0.6c0.6,0,1.3-0.2,1.8-0.6l4.4-3.3
             	L30,22L30,22z M30,20.8l-7-5.2l7-5.2V20.8z M17.2,18.6C16.8,18.9,16.4,19,16,19c-0.4,0-0.9-0.1-1.2-0.4l-4.1-3.1l-0.8-0.6L2,9v0
             	c0-1.1,0.9-2,2-2h24c1.1,0,2,0.9,2,2L17.2,18.6z"></path>
@@ -357,8 +360,7 @@
       </div>
       <div class="form__review">
         <label class="form__review-text" for="review">Доп</label>
-        <textarea class="form__review-textarea" name="review" id="review" rows="5" placeholder="Опишите все ваши пожелания к заказу">Опишите все ваши пожелания к заказу
-        </textarea>
+        <textarea class="form__review-textarea" name="review" id="review" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         <div class="form__comment-wrapper">
         <span class="form__comment">*Поля обязательны для заполнения</span>
         <button class="form__submit button" type="submit">Отправить заказ</button>
@@ -370,7 +372,7 @@
   <footer class="page-footer__social social">
     <div class="page-footer__wrapper">
     <a class="page-footer__logo" href="#">
-      
+
       <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
       <svg class="page-footer__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 101.6 34.1" style="enable-background:new 0 0 101.6 34.1;" xml:space="preserve">
       <g>

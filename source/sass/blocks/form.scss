@@ -240,6 +240,7 @@
   line-height: 18px;
   font-weight: bold;
   align-items: center;
+  position: relative;
 }
 
 .form__text-promo {
@@ -277,7 +278,7 @@
   content: "";
   width: 16px;
   height: 16px;
-  left: 41px;
+  left: 11px;
   background-color: #63d1bb;
   border-radius: 50%;
   vertical-align: middle;
@@ -405,7 +406,7 @@
   }
 
   .form__item-type[type="radio"] + .form__text-type::after {
-    left: 236px;
+    left: 16px;
   }
 
   .form__text-color {
@@ -569,9 +570,6 @@
     margin-left: 75px;
   }
 
-  .form__item-type[type="radio"] + .form__text-type::after {
-    left: 243px;
-  }
 
   .form__title {
     text-align: center;

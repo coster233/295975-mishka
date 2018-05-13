@@ -103,6 +103,8 @@
   .catalog-items__price {
     font-size: 17px;
     line-height: 24px;
+    margin-top: -8px;
+    padding-left: 5px;
   }
 
   .catalog-items__buy {
@@ -136,6 +138,11 @@
 
   .catalog-items__buy {
     width: 256px;
+  }
+
+  .catalog-items__price {
+    margin-top: -5px;
+    padding-left: 1px;
   }
 
 

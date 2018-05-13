@@ -41,6 +41,7 @@ gulp.task("style", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]);
+  gulp.watch("source/img/icon-*.svg", ["sprite"]);
 });
 
   gulp.task("images", function () {
