@@ -71,6 +71,8 @@
   color: #444444;
   display: block;
   text-align: center;
+  z-index: 20;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {

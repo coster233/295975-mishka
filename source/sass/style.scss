@@ -1,6 +1,6 @@
-@import "variables.scss";
-@import "mixins.scss";
-@import "base.scss";
+@import "variables";
+@import "mixins";
+@import "base";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/goods";
@@ -15,3 +15,4 @@
 @import "blocks/form";
 @import "fonts.scss";
 @import "blocks/modal";
+@import "blocks/map";
