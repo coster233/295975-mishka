@@ -51,6 +51,12 @@
   min-height: 102px;
 }
 
+.goods__item-wrapper {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
 .goods__item--toys {
   background-color: #57c3b3;
 }

@@ -3,6 +3,14 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+  position: relative;
+}
+
+.page-header__icon-close {
+  position: absolute;
+  right: 30px;
+  top: 29px;
+  display: none;
 }
 .page-header__logo {
   display: flex;
