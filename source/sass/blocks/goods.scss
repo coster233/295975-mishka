@@ -36,28 +36,35 @@
   color: #ffffff;
 }
 
-.goods__item--interior {
-  min-height: 103px;
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  background-position: 244px 22px;
-}
-
-.goods__item--toys {
-  min-height: 103px;
-  background-color: #56c3b2;
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
-  background-position: 232px 20px;
-}
-
 .goods__title {
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
   width: 100px;
   padding-left: 28px;
-  padding-top: 6px;
+  padding-top: 0px;
+}
+
+.goods__item {
+  display: flex;
+  align-items: center;
+  min-height: 102px;
+}
+
+.goods__item--toys {
+  background-color: #57c3b3;
+}
+
+.goods__item-interior {
+  margin-top: 14px;
+  margin-left: 115px;
+  fill: #3bb09d;
+}
+
+.goods__item-toy {
+  margin-left: 105px;
+  margin-top: 12px;
+  fill: #3bb09d;
 }
 
 @media (min-width: $tablet-width) {
@@ -95,19 +102,21 @@
     padding-top: 152px;
   }
 
-  .goods__item--interior {
-    background-position: 257px 29px;
-  }
-
-  .goods__item--toys {
-    background-position: 240px 29px;
-  }
-
   .goods__title {
     padding-left: 37px;
-    padding-top: 14px;
+    padding-top: 0px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
+  .goods__item-interior {
+    margin-top: 5px;
+    margin-left: 120px;
+  }
+
+  .goods__item-toy {
+    margin-top: 4px;
+  }
 
   .goods__preview {
     min-height: 610px;
@@ -142,12 +151,26 @@
     background-size: cover;
   }
   }
+
+  .goods::before {
+    bottom: -17px;
+  }
+
+  .goods__item-interior {
+    margin-left: 311px;
+  }
+
+  .goods__item-toy {
+    margin-left: 295px;
+  }
+
   .goods__list-wrapper {
   padding-left: 100px;
   padding-top: 15px;
   padding-right: 0;
   width: 1050px;
   }
+
   .goods__preview-title {
     font-size: 53px;
     line-height: 57px;
@@ -155,10 +178,5 @@
     padding-left: 275px;
     padding-top: 152px;
   }
-  .goods__item--interior {
-    background-position: 449px 29px;
-  }
-  .goods__item--toys {
-    background-position: 429px;
-  }
+
 }

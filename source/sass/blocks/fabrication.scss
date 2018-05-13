@@ -10,13 +10,17 @@
   border: 1px solid #ededed;
 
 }
-.fabrication__illustration--desktop {
-  display: none;
+
+.fabrication__picture {
+  position: relative;
 }
 
-
-.fabrication__illustration--tablet {
-  display: none;
+.fabrication__icon-video {
+  position: absolute;
+  width: 101px;
+  height: 77px;
+  top: -113px;
+  left: 76px;
 }
 
 .fabrication__title {
@@ -90,6 +94,11 @@
   }
   .fabrication__illustration {
     display: none;
+  }
+
+  .fabrication__icon-video {
+    top: 186px;
+    left: 286px;
   }
 
   .fabrication__illustration--tablet {

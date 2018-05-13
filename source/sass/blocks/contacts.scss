@@ -47,6 +47,10 @@
   width: 190px;
 }
 
+.contacts__adress-email {
+  border-bottom: 1px solid #62d1ba;
+}
+
 .map {
   padding-top: 21px;
 }
@@ -105,6 +109,10 @@
   .contacts__item--addres {
     padding: 0;
     padding-left: 53px;
+  }
+
+  .contacts__adress-email {
+    height: 30px;
   }
   .contacts__map {
     display: none;
