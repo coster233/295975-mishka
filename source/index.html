@@ -9,6 +9,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display:none">
+      <include src="source/img/sprite.svg"></include>
+    </div>
     <div class="main-wrapper">
     <header class="page-header">
       <div class="page-header-wrapper">
@@ -388,15 +391,12 @@
     </ul>
   </div>
   <div class="map">
-
-      <img class="contacts__map" src="img/map-mobile@1x.jpg"
-      srcset="img/map-mobile@2x.jpg" width="322" height="457" alt="Мы на карте">
-      <img class="contacts__map--table" src="img/map-tablet@1x.jpg"
-      srcset="img/map-tablet@2x.jpg"
-      width="746" height="457" alt="Мы на карте">
-      <img class="contacts__map--desktop" src="img/map-desktop@1x.jpg"
-      srcset="img/map-desktop@2x.jpg" width="525" height="457" alt="Мы на карте">
-
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x,img/map-desktop@2x.jpg 2x">
+      <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+      <img src="img/map-mobile@1x.jpg.jpg"
+      srcset="img/map-mobile@2x.jpg.jpg 2x" alt="мы на карте">
+    </picture>
 
   </div>
   <div class="contacts__connection-wrapper">
