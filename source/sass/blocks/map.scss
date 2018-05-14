@@ -24,9 +24,6 @@
     z-index: 1;
 }
 @media (min-width:$tablet-width) {
-    .contacts__map {
-        display: none;
-    }
     .map {
         padding-top: 31px;
     }
