@@ -8,6 +8,11 @@
 .fabrication__wrapper {
     border: 1px solid #ededed;
 }
+
+.fabrication__header-wrapper {
+    position: relative;
+}
+
 .fabrication__picture {
     position: relative;
 }
@@ -15,8 +20,8 @@
     position: absolute;
     width: 101px;
     height: 77px;
-    top: -113px;
-    left: 76px;
+    top: 100px;
+    left: 79px;
 }
 .fabrication__title {
     font-size: 17px;
