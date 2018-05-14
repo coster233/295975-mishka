@@ -59,7 +59,7 @@ gulp.task("style", function() {
   gulp.task("webp", function () {
     return gulp.src("source/img/**/*.{png,jpg}")
       .pipe(webp({quality: 90}))
-      .pipe(gulp.dest("source/img"));
+      .pipe(gulp.dest("build/img"));
 });
 
   gulp.task("sprite", function () {
@@ -80,7 +80,7 @@ gulp.task("style", function() {
 });
 
   gulp.task("build", function (done) {
-    run("clean", "copy", "style", "sprite", "html", done);
+    run("clean", "copy", "style", "sprite", "html", "webp", done);
   });
 
   gulp.task("copy", function () {

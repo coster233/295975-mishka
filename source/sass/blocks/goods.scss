@@ -1,188 +1,170 @@
-@media (max-width: 767px) {
-  .goods__preview {
-    background-image: url("../img/hero-mobile@1x.jpg");
-    width: auto;
-    height: 284px;
-    background-position: -55px 53px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: cover;
-  }
+@media (max-width:767px) {
+    .goods {
+        margin-top: 34px;
+    }
+    .goods__preview {
+        background-image: url("../img/hero-mobile@1x.jpg");
+        width: auto;
+        height: 284px;
+        background-position: -55px 53px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media (min-resolution:$retina-dpi), (min-resolution:$retina-dppx) {
+            background-image: url("../img/hero-mobile@2x.jpg");
+            background-size: cover;
+        }
+    }
+    .goods__preview-hand {
+        width: 121px;
+        padding: 0 57px;
+    }
 }
-  .goods__preview-hand {
-    width: 121px;
-    padding: 0 57px;
-  }
-}
-
 .goods__preview-title {
-  text-align: center;
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: bold;
-  padding-top: 70px;
-}
-
-
-.goods__list {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: $green;
-  color: #ffffff;
-}
-
-.goods__title {
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: bold;
-  width: 100px;
-  padding-left: 28px;
-  padding-top: 0px;
-}
-
-.goods__item {
-  display: flex;
-  align-items: center;
-  min-height: 102px;
-}
-
-.goods__item-wrapper {
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.goods__item--toys {
-  background-color: #57c3b3;
-}
-
-.goods__item-interior {
-  margin-top: 14px;
-  margin-left: 115px;
-  fill: #3bb09d;
-}
-
-.goods__item-toy {
-  margin-left: 105px;
-  margin-top: 12px;
-  fill: #3bb09d;
-}
-
-@media (min-width: $tablet-width) {
-  .goods {
-    background-image: url("../img/hero-desktop.jpg");
-    width: 768px;
-    height: 746px;
-    background-position: 0px -17px;
-    background-repeat: no-repeat;
-    position: relative;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/hero-tablet@2x.jpg");
-    background-position: -189px 0px;
-    background-size: cover;
-  }
-
-  }
-  .goods::before {
-    position: absolute;
-    z-index: 100;
-    content: "";
-    bottom: -20px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 34px;
-    background-image: url("../img/big-zigzag-fill.svg");
-  }
-  .goods__preview-title {
-    font-size: 43px;
-    line-height: 50px;
-    margin: 0;
-    padding-left: 62px;
-    padding-right: 62px;
-    padding-top: 152px;
-  }
-
-  .goods__title {
-    padding-left: 37px;
-    padding-top: 0px;
-    font-size: 20px;
+    text-align: center;
+    font-size: 27px;
     line-height: 30px;
-  }
-
-  .goods__item-interior {
-    margin-top: 5px;
-    margin-left: 120px;
-  }
-
-  .goods__item-toy {
-    margin-top: 4px;
-  }
-
-  .goods__preview {
-    min-height: 610px;
-    margin-top: -16px;
-  }
-  .goods__list-wrapper {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 15px;
-  }
-  .goods__list {
-    flex-direction: row;
-  }
-  .goods__item {
-    width: 50%;
-    min-height: 119px;
-  }
+    font-weight: bold;
+    padding-top: 70px;
 }
-
-@media (min-width: $desktop-width) {
-  .goods {
-    background-image: url(../img/hero-desktop.jpg);
-    width: 100%;
-    height: 746px;
-    background-position: 241px -2px;
-    background-repeat: no-repeat;
-    position: relative;
-    background-color: #f9f9f9;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/hero-desktop@2x.jpg");
-    background-position: 0px -34px;
-    background-size: cover;
-  }
-  }
-
-  .goods::before {
-    bottom: -17px;
-  }
-
-  .goods__item-interior {
-    margin-left: 311px;
-  }
-
-  .goods__item-toy {
-    margin-left: 295px;
-  }
-
-  .goods__list-wrapper {
-  padding-left: 100px;
-  padding-top: 15px;
-  padding-right: 0;
-  width: 1050px;
-  }
-
-  .goods__preview-title {
-    font-size: 53px;
-    line-height: 57px;
-    width: 700px;
-    padding-left: 275px;
-    padding-top: 152px;
-  }
-
+.goods__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: $green;
+    color: #ffffff;
+}
+.goods__title {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
+    width: 100px;
+    padding-left: 28px;
+    padding-top: 0px;
+}
+.goods__item {
+    display: flex;
+    align-items: center;
+    min-height: 102px;
+}
+.goods__item-wrapper {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.goods__item--toys {
+    background-color: #57c3b3;
+}
+.goods__item-interior {
+    margin-top: 14px;
+    margin-left: 115px;
+    fill: #3bb09d;
+}
+.goods__item-toy {
+    margin-left: 105px;
+    margin-top: 12px;
+    fill: #3bb09d;
+}
+@media (min-width:$tablet-width) {
+    .goods {
+        margin-top: 0px;
+        background-image: url("../img/hero-desktop.jpg");
+        width: 768px;
+        height: 746px;
+        background-position: 0px -17px;
+        background-repeat: no-repeat;
+        position: relative;
+        @media (min-resolution:$retina-dpi), (min-resolution:$retina-dppx) {
+            background-image: url("../img/hero-tablet@2x.jpg");
+            background-position: -189px 0px;
+            background-size: cover;
+        }
+    }
+    .goods::before {
+        position: absolute;
+        z-index: 100;
+        content: "";
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 34px;
+        background-image: url("../img/big-zigzag-fill.svg");
+    }
+    .goods__preview-title {
+        font-size: 43px;
+        line-height: 50px;
+        margin: 0;
+        padding-left: 62px;
+        padding-right: 62px;
+        padding-top: 152px;
+    }
+    .goods__title {
+        padding-left: 37px;
+        padding-top: 0px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .goods__item-interior {
+        margin-top: 5px;
+        margin-left: 120px;
+    }
+    .goods__item-toy {
+        margin-top: 4px;
+    }
+    .goods__preview {
+        min-height: 610px;
+        margin-top: -40px;
+    }
+    .goods__list-wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+    }
+    .goods__list {
+        flex-direction: row;
+    }
+    .goods__item {
+        width: 50%;
+        min-height: 119px;
+    }
+}
+@media (min-width:$desktop-width) {
+    .goods {
+        background-image: url(../img/hero-desktop.jpg);
+        width: 100%;
+        height: 746px;
+        background-position: 241px -2px;
+        background-repeat: no-repeat;
+        position: relative;
+        background-color: #f9f9f9;
+        @media (min-resolution:$retina-dpi), (min-resolution:$retina-dppx) {
+            background-image: url("../img/hero-desktop@2x.jpg");
+            background-position: 0px -34px;
+            background-size: cover;
+        }
+    }
+    .goods::before {
+        bottom: -17px;
+    }
+    .goods__item-interior {
+        margin-left: 311px;
+    }
+    .goods__item-toy {
+        margin-left: 295px;
+    }
+    .goods__list-wrapper {
+        padding-left: 100px;
+        padding-top: 15px;
+        padding-right: 0;
+        width: 1050px;
+    }
+    .goods__preview-title {
+        font-size: 53px;
+        line-height: 57px;
+        width: 700px;
+        padding-left: 275px;
+        padding-top: 152px;
+    }
 }
