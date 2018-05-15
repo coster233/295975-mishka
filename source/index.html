@@ -9,9 +9,6 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
     <div class="main-wrapper">
       <header class="page-header">
         <div class="page-header__logo-wrapper header-border">
@@ -140,6 +137,10 @@
               <a class="goods-week__order button" href="#">Заказать</a>
             </div>
             <picture class="goods-week__picture">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x_result.webp 1x, img/triple-set-desktop@2x_result.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x_result.webp 1x, img/triple-set-tablet@2x_result.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x_result.webp 1x, img/triple-set-mobile@2x_result.webp 2x">
+
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Корзинка для белья">
@@ -222,6 +223,10 @@
           <div class="map">
             <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.159082394118!2d37.6297302159313!3d55.77310888055881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6e50d1c681%3A0x389b21629b1b495b!2z0JTQvtGF0L7QtNC90YvQuSDQlNC-0Lw!5e0!3m2!1sru!2sru!4v1526243203139"  allowfullscreen></iframe>
             <picture class="map__cart">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop@1x_result.webp 1x, img/map-desktop@2x_result.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x_result.webp 1x, img/map-tablet@2x_result.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x_result.webp 1x, img/map-mobile@2x_result.webp 2x">
+
               <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x,img/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <img src="img/map-mobile@1x.jpg" width="322"
