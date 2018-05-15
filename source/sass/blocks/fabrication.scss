@@ -28,6 +28,12 @@
     height: 77px;
     top: 100px;
     left: 79px;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:active {
+      transform: scale(0.8);
+    }
 }
 .fabrication__title {
     font-size: 17px;

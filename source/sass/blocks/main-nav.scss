@@ -78,6 +78,12 @@
     }
     .main-nav__link--user-cart {
         padding-left: 35px;
+        &:hover {
+          color: #666666;
+          .main-nav__item-search {
+            fill: #63d1bb;
+          }
+        }
     }
     .main-wrapper__nav--catalog {
         margin-left: 50px;

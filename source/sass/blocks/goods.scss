@@ -48,6 +48,7 @@
     display: flex;
     align-items: center;
     min-height: 102px;
+    background-color: $green;
     &:hover {
     transform: translateY(-5px);
     }
@@ -56,6 +57,9 @@
     display: flex;
     align-items: center;
     color: white;
+    &:active {
+      opacity: 0.5;
+    }
 }
 .goods__item--toys {
     background-color: #57c3b3;

@@ -42,6 +42,11 @@
 .form__items-color {
     min-height: 42px;
     margin-bottom: 19px;
+    &:hover {
+      & .form__item-color[type="checkbox"] + .form__text-color::before {
+        border-color: #62d1ba;
+      }
+    }
 }
 .form__item-color[type="checkbox"] {
     display: none;
@@ -112,6 +117,18 @@
     line-height: 18px;
     &:hover {
     border-color: #62d1ba;
+    & + .form__communication-phone, {
+      fill: #62d1ba;
+    }
+    }
+    &:active {
+    border-color: #62d1ba;
+    }
+    &:hover {
+    border-color: #62d1ba;
+    & + .form__communication-mail, {
+      fill: #62d1ba;
+    }
     }
     &:active {
     border-color: #62d1ba;
@@ -247,6 +264,7 @@
     font-weight: bold;
     align-items: center;
     position: relative;
+
 }
 .form__text-promo {
     margin-left: 25px;
@@ -383,6 +401,11 @@
     }
     .form__items-type {
         margin-bottom: 29px;
+        &:hover {
+          & .form__item-type[type="radio"] + .form__text-type::before {
+            box-shadow: 0 0 0 2px #62d1ba;
+          }
+        }
     }
     .form__text-type {
         font-size: 19px;
