@@ -108,7 +108,7 @@
     .catalog-items__item {
         flex-direction: column;
         width: 316px;
-        margin-right: 48px;
+        margin-right: 53px;
     }
     .catalog-items {
         margin-top: 75px;
@@ -120,6 +120,9 @@
     }
     .catalog-items__buy {
         width: 256px;
+    }
+    .catalog-items__wrapper {
+        padding-top: 13px;
     }
     .catalog-items__price {
         margin-top: -5px;
