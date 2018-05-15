@@ -44,9 +44,13 @@
     padding-top: 0px;
 }
 .goods__item {
+    transition: 0.2s;
     display: flex;
     align-items: center;
     min-height: 102px;
+    &:hover {
+    transform: translateY(-5px);
+    }
 }
 .goods__item-wrapper {
     display: flex;
@@ -146,7 +150,7 @@
         }
     }
     .goods::before {
-        bottom: -17px;
+        bottom: -14px;
     }
     .goods__item-interior {
         margin-left: 311px;
@@ -156,9 +160,9 @@
     }
     .goods__list-wrapper {
         padding-left: 50px;
-        padding-top: 15px;
         padding-right: 0;
         width: 1050px;
+        padding-top: 16px;
     }
     .goods__preview-title {
         font-size: 53px;
@@ -167,4 +171,5 @@
         padding-left: 225px;
         padding-top: 152px;
     }
+
 }

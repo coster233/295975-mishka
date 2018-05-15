@@ -20,6 +20,12 @@
     height: 47px;
     margin-top: -8px;
     margin-left: -4px;
+    &:hover {
+      fill: #46c1ae;
+    }
+    &:active {
+      opacity: 0.5;
+    }
 }
 .page-footer__items {
     padding-right: 21px;
@@ -38,6 +44,12 @@
 }
 .page-footer__social-link {
     font-size: 0;
+    &:hover {
+      fill: #46c1ae;
+    }
+    &:active {
+      opacity: 0.5;
+    }
 }
 .page-footer__list {
     padding-bottom: 10px;
@@ -63,6 +75,12 @@
         height: 34px;
         margin-left: 49px;
         margin-right: 74px;
+        &:hover {
+          fill: #46c1ae;
+        }
+        &:active {
+          opacity: 0.5;
+        }
     }
     .page-footer__img {
         width: 102px;

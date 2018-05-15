@@ -35,6 +35,12 @@
 .contacts__adress-email {
     border-bottom: 1px solid #62d1ba;
     color: $grey;
+    &:hover {
+      color: #46c1ae;
+    }
+    &:active {
+      opacity: 0.4;
+    }
 }
 .contacts__connection-wrapper {
     padding-left: 30px;
@@ -51,6 +57,13 @@
     display: block;
     text-align: center;
     font-weight: bold;
+    &:hover {
+      background-color: #444444;
+      color: white;
+    }
+    &:active {
+      color: #7c7c7c;
+    }
 }
 @media (min-width:$tablet-width) {
     .contacts__main {

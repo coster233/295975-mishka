@@ -18,6 +18,12 @@
     height: 78px;
     border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
 }
 .page-header__delivery {
     display: none;

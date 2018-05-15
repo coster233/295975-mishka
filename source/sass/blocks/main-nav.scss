@@ -23,12 +23,25 @@
 }
 .main-nav__item-search {
     padding-right: 24px;
+    fill: #d3d2d2;
+    &:hover {
+      fill: #6dd4bf;
+    }
+    &:active {
+      fill: #d0f1ea;
+    }
 }
 .main-nav__link {
     font-weight: bold;
     color: #000000;
     font-size: 17px;
     line-height: 24px;
+    &:hover {
+      color: #666666;
+    }
+    &:active {
+      color: #c7c7c7;
+    }
 }
 .main-wrapper__nav--products {
     display: none;
