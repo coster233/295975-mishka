@@ -168,8 +168,9 @@
     .goods-week {
         min-height: 636px;
         padding-top: 86px;
-        padding: 0 50px;
+        padding: 0;
         margin-top: 70px;
+        width: 1150px;
     }
     .goods-week__picture {
         width: 525px;
@@ -178,7 +179,7 @@
     .goods-week__products-wrapper {
         flex-direction: row-reverse;
         z-index: 1;
-        padding-left: 74px;
+        padding-left: 120px;
         width: 700px;
         padding-top: 50px;
     }
@@ -207,13 +208,13 @@
         margin-top: 14px;
     }
     .goods-week__price-wrapper {
-        margin-top: -108px;
-        margin-left: 176px;
+        margin-top: -111px;
+        margin-left: 224px;
     }
     .goods-week__container-wrapper {
         position: relative;
         padding-bottom: 0;
-        padding-left: 174px;
+        padding-left: 222px;
     }
     .goods-week__wrapper {
         padding-left: 51px;

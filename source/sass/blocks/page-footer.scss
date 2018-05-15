@@ -89,13 +89,17 @@
     .page-footer {
         width: 100%;
     }
+
+    .page-footer__items {
+      padding-right: 0;
+    }
     .page-footer__wrapper {
         width: 1150px;
         margin: 0 auto;
     }
     .page-footer__logo {
         margin-right: 262px;
-        margin-left: 77px;
+        margin-left: 102px;
     }
     .page-footer__social-list {
         padding-top: 48px;
@@ -103,5 +107,6 @@
     .page-footer__list {
         margin-left: 246px;
         padding-top: 34px;
+        width: 190px;
     }
 }

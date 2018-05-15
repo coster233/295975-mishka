@@ -84,10 +84,13 @@
         order: 4;
         padding-top: 16px;
         margin-right: 25px;
-        margin-left: 53px;
+        margin-left: 99px;
     }
     .main-wrapper__nav--catalog {
         order: 1;
+        margin-left: 96px;
+        padding-top: 0;
+        border-bottom: 1px solid #ececec;
     }
     .main-wrapper__user {
         order: 3;
@@ -113,10 +116,7 @@
         border-right: 1px solid #ececec;
         height: 89px;
     }
-    .main-wrapper__nav--catalog {
-        padding-top: 0;
-        border-bottom: 1px solid #ececec;
-    }
+
     .main-nav__item-search {
         padding-right: 28px;
     }

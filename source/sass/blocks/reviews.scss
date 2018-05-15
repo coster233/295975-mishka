@@ -142,17 +142,18 @@
 }
 @media (min-width:$desktop-width) {
     .reviews {
-        padding: 0 49px;
+        padding-left: 49px;
+        padding-right: 0;
         min-height: 457px;
     }
     .reviews__description-wrapper {
-        padding-left: 222px;
+        padding-left: 221px;
     }
     .reviews__description-wrapper::before {
         left: 51px;
     }
     .reviews::after {
-        bottom: -94px;
+        bottom: 11px;
     }
     .reviews__title {
         font-size: 53px;
