@@ -43,6 +43,22 @@
       color: #c7c7c7;
     }
 }
+.main-nav__link--user-search {
+    &:hover {
+      color: #666666;
+      .main-nav__item-search {
+        fill: #63d1bb;
+      }
+    }
+}
+.main-nav__link--user-cart {
+    &:hover {
+      color: #666666;
+      .main-nav__item-search {
+        fill: #63d1bb;
+      }
+    }
+}
 .main-wrapper__nav--products {
     display: none;
 }
@@ -78,12 +94,6 @@
     }
     .main-nav__link--user-cart {
         padding-left: 35px;
-        &:hover {
-          color: #666666;
-          .main-nav__item-search {
-            fill: #63d1bb;
-          }
-        }
     }
     .main-wrapper__nav--catalog {
         margin-left: 50px;
