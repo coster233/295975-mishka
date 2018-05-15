@@ -40,10 +40,11 @@
     font-size: 0;
 }
 .page-footer__list {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-left: 67px;
     list-style: none;
     display: flex;
+    margin-bottom: 0;
 }
 .page-footer__copyright-text {
     font-size: 19px;
@@ -70,7 +71,7 @@
     .page-footer__list {
         padding: 0;
         margin-left: 62px;
-        padding-top: 27px;
+        padding-top: 7px;
     }
     .page-footer {
         width: 100%;
@@ -106,7 +107,7 @@
     }
     .page-footer__list {
         margin-left: 254px;
-        padding-top: 34px;
+        padding-top: 7px;
         width: 190px;
     }
 }
