@@ -13,6 +13,8 @@
     "gulp-posthtml": "^3.0.4",
     "gulp-sass": "4.0.x",
     "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^3.0.0",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -42,6 +44,7 @@
   "dependencies": {
     "del": "^3.0.0",
     "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-webp": "^3.0.0",
     "npm-install-peers": "^1.2.1",

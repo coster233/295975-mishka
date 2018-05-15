@@ -112,7 +112,8 @@
 }
 @media (min-width:$desktop-width) {
     .advantages {
-        padding: 0 93px;
+        padding: 0;
+        padding-left: 44px;
         margin-top: 151px;
     }
     .advantages__title {
@@ -120,6 +121,7 @@
         font-size: 53px;
         line-height: 57px;
         margin-top: 0;
+        margin-bottom: 78px;
     }
     .advantages-wrapper {
         padding-left: 183px;

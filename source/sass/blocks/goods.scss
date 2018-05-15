@@ -141,7 +141,7 @@
         background-color: #f9f9f9;
         @media (min-resolution:$retina-dpi), (min-resolution:$retina-dppx) {
             background-image: url("../img/hero-desktop@2x.jpg");
-            background-position: 52px -4px;
+            background-position: 0px -4px;
             background-size: cover;
         }
     }
@@ -155,7 +155,7 @@
         margin-left: 295px;
     }
     .goods__list-wrapper {
-        padding-left: 100px;
+        padding-left: 50px;
         padding-top: 15px;
         padding-right: 0;
         width: 1050px;
@@ -164,7 +164,7 @@
         font-size: 53px;
         line-height: 57px;
         width: 700px;
-        padding-left: 275px;
+        padding-left: 225px;
         padding-top: 152px;
     }
 }
