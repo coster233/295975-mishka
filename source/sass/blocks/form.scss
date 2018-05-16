@@ -417,11 +417,6 @@
     }
     .form__items-type {
         margin-bottom: 29px;
-        &:hover {
-          & .form__item-type[type="radio"] + .form__text-type::before {
-            box-shadow: 0 0 0 2px #62d1ba;
-          }
-        }
     }
     .form__text-type {
         font-size: 19px;

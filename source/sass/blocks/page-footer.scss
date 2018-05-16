@@ -15,8 +15,10 @@
 }
 .page-footer__copyright-link {
     fill: #63d1bb;
+    display: block;
 }
 .page-footer__copyright-logo {
+    width: 42px;
     height: 47px;
     margin-top: -8px;
     margin-left: -4px;
@@ -125,7 +127,7 @@
     }
     .page-footer__list {
         margin-left: 254px;
-        padding-top: 7px;
+        padding-top: 13px;
         width: 190px;
     }
 }
