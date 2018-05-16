@@ -36,10 +36,10 @@
     border-bottom: 1px solid #62d1ba;
     color: $grey;
     &:hover {
-      color: #46c1ae;
+        color: #46c1ae;
     }
     &:active {
-      opacity: 0.4;
+        opacity: 0.4;
     }
 }
 .contacts__connection-wrapper {
@@ -58,11 +58,11 @@
     text-align: center;
     font-weight: bold;
     &:hover {
-      background-color: #444444;
-      color: white;
+        background-color: #444444;
+        color: white;
     }
     &:active {
-      color: #7c7c7c;
+        color: #7c7c7c;
     }
 }
 @media (min-width:$tablet-width) {

@@ -80,11 +80,11 @@
     z-index: 5;
     position: relative;
     &:hover {
-      background-color: #444444;
-      color: white;
+        background-color: #444444;
+        color: white;
     }
     &:active {
-      color: #7c7c7c;
+        color: #7c7c7c;
     }
 }
 @media (min-width:$tablet-width) {

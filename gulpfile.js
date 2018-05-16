@@ -20,101 +20,109 @@ var pump = require('pump');
 var htmlmin = require('gulp-htmlmin');
 
 gulp.task("style", function() {
-  gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest("build/css"))
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
+    gulp.src("source/sass/style.scss")
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(postcss([
+            autoprefixer()
+        ]))
+        .pipe(gulp.dest("build/css"))
+        .pipe(minify())
+        .pipe(rename("style.min.css"))
+        .pipe(gulp.dest("build/css"))
+        .pipe(server.stream());
 });
 
-  gulp.task("serve", function() {
+gulp.task("serve", function() {
     server.init({
-      server: "build/",
-      notify: false,
-      open: true,
-      cors: true,
-      ui: false
+        server: "build/",
+        notify: false,
+        open: true,
+        cors: true,
+        ui: false
     });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html", ["html"]);
-  gulp.watch("source/img/icon-*.svg", ["sprite"]);
+    gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+    gulp.watch("source/*.html", ["html"]);
+    gulp.watch("source/img/icon-*.svg", ["sprite"]);
 });
 
-  gulp.task("images", function () {
+gulp.task("images", function() {
     return gulp.src("source/img/**/*.{png,jpg,svg}")
-      .pipe(imagemin([
-        imagemin.optipng({optimizationLevel: 3}),
-        imagemin.jpegtran({progressive: true}),
-        imagemin.svgo()
-      ]))
+        .pipe(imagemin([
+            imagemin.optipng({
+                optimizationLevel: 3
+            }),
+            imagemin.jpegtran({
+                progressive: true
+            }),
+            imagemin.svgo()
+        ]))
 
-  .pipe(gulp.dest("source/img"));
+        .pipe(gulp.dest("source/img"));
 
 });
 
-  gulp.task("webp", function () {
+gulp.task("webp", function() {
     return gulp.src("source/img/**/*.{png,jpg}")
-      .pipe(webp({quality: 90}))
-      .pipe(gulp.dest("build/img"));
+        .pipe(webp({
+            quality: 90
+        }))
+        .pipe(gulp.dest("build/img"));
 });
 
-  gulp.task("sprite", function () {
+gulp.task("sprite", function() {
     return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-      .pipe(rename("sprite.svg"))
-      .pipe(gulp.dest("build/img"));
+        .pipe(svgstore({
+            inlineSvg: true
+        }))
+        .pipe(rename("sprite.svg"))
+        .pipe(gulp.dest("build/img"));
 });
 
-  gulp.task("html", function () {
+gulp.task("html", function() {
     return gulp.src("source/*.html")
-      .pipe(posthtml([
-        include()
-      ]))
-      .pipe(gulp.dest("build"));
+        .pipe(posthtml([
+            include()
+        ]))
+        .pipe(gulp.dest("build"));
 });
 
-  gulp.task("build", function (done) {
+gulp.task("build", function(done) {
     run("clean", "copy", "style", "sprite", "html", "webp", "compress", "minify", done);
-  });
-
-  gulp.task("copy", function () {
-    return gulp.src([
-      "source/fonts/**/*.{woff,woff2}",
-      "source/img/**"
-    ], {
-      base: "source"
-    })
-    .pipe(gulp.dest("build"));
 });
 
-gulp.task('compress', function (cb) {
-  pump([
-        gulp.src('source/js/*.js'),
-        uglify(),
-        gulp.dest('build/js')
-    ],
-    cb
-  );
+gulp.task("copy", function() {
+    return gulp.src([
+            "source/fonts/**/*.{woff,woff2}",
+            "source/img/**"
+        ], {
+            base: "source"
+        })
+        .pipe(gulp.dest("build"));
+});
+
+gulp.task('compress', function(cb) {
+    pump([
+            gulp.src('source/js/*.js'),
+            uglify(),
+            gulp.dest('build/js')
+        ],
+        cb
+    );
 });
 
 gulp.task('minify', function() {
-  return gulp.src('source/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('build'));
+    return gulp.src('source/*.html')
+        .pipe(htmlmin({
+            collapseWhitespace: true
+        }))
+        .pipe(gulp.dest('build'));
 });
 
 
 
 
- gulp.task("clean", function () {
-   return del("build");
- });
+gulp.task("clean", function() {
+    return del("build");
+});

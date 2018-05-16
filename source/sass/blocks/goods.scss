@@ -50,7 +50,7 @@
     min-height: 102px;
     background-color: $green;
     &:hover {
-    transform: translateY(-5px);
+        transform: translateY(-5px);
     }
 }
 .goods__item-wrapper {
@@ -58,7 +58,7 @@
     align-items: center;
     color: white;
     &:active {
-      opacity: 0.5;
+        opacity: 0.5;
     }
 }
 .goods__item--toys {
@@ -175,5 +175,4 @@
         padding-left: 225px;
         padding-top: 152px;
     }
-
 }

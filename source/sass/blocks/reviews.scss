@@ -42,10 +42,10 @@
     height: 50px;
     background-color: #ffffff;
     &:hover {
-      opacity: 0.6;
+        opacity: 0.6;
     }
     &:active {
-      opacity: 0.3;
+        opacity: 0.3;
     }
 }
 .reviews__write {
@@ -58,11 +58,11 @@
     display: block;
     text-align: center;
     &:hover {
-      background-color: #444444;
-      color: white;
+        background-color: #444444;
+        color: white;
     }
     &:active {
-      color: #7c7c7c;
+        color: #7c7c7c;
     }
 }
 @media (min-width:$tablet-width) {
@@ -155,7 +155,7 @@
 }
 @media (min-width:$desktop-width) {
     .reviews {
-      display: block;
+        display: block;
         padding-left: 0px;
         padding-right: 0;
         min-height: 457px;
@@ -190,10 +190,10 @@
         margin: 0;
     }
     .reviews__author-wrapper {
-      display: block;
-      margin-top: 39px;
-      width: 100%;
-      padding-top: 0;
+        display: block;
+        margin-top: 39px;
+        width: 100%;
+        padding-top: 0;
     }
     .reviews__author {
         width: 280px;
