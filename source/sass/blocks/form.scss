@@ -47,6 +47,11 @@
         border-color: #62d1ba;
       }
     }
+    &:active {
+      & .form__item-color[type="checkbox"] + .form__text-color::before {
+        border-color: #c7c7c7;
+      }
+    }
 }
 .form__item-color[type="checkbox"] {
     display: none;
@@ -121,8 +126,11 @@
       fill: #62d1ba;
     }
     }
-    &:active {
+    &:focus {
     border-color: #62d1ba;
+    & + .form__communication-phone, {
+      fill: #62d1ba;
+    }
     }
     &:hover {
     border-color: #62d1ba;
@@ -130,8 +138,11 @@
       fill: #62d1ba;
     }
     }
-    &:active {
+    &:focus {
     border-color: #62d1ba;
+    & + .form__communication-mail, {
+      fill: #62d1ba;
+    }
     }
 }
 .form__communication-phone {
@@ -290,9 +301,6 @@
     vertical-align: middle;
     box-shadow: 0 0 0 2px black;
     border-radius: 50%;
-    &:hover {
-    box-shadow: 0 0 0 2px #62d1ba;
-    }
 }
 .form__item-type[type="radio"] + .form__text-type::after {
     position: absolute;
@@ -315,6 +323,12 @@
       }
     }
 }
+.form__text-type:active {
+    &::before {
+      box-shadow: 0 0 0 2px #c7c7c7;
+    }
+}
+
 .form__user {
     margin: 0;
     padding: 0;
@@ -356,7 +370,7 @@
     &:hover {
     border-color: #62d1ba;
     }
-    &:active {
+    &:visited {
     border-color: #62d1ba;
     }
 }
@@ -608,10 +622,10 @@
         padding-top: 5px;
     }
     .form__communication-phone {
-        right: 234px;
+        right: 183px;
     }
     .form__communication-mail {
-        right: 230px;
+        right: 181px;
     }
     .form__review {
         padding-left: 112px;

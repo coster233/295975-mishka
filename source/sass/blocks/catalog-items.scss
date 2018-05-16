@@ -7,14 +7,22 @@
     border: 1px solid #ededed;
     margin-bottom: 30px;
 }
+.catalog-items__connection {
+  position: relative;
+}
+.catalog-items__item:hover {
+  .catalog-items__wrapper {
+    box-shadow: 0px 5px 20px 0px #cbcccc;
+  }
+}
+.catalog-items__item:active {
+  .catalog-items__wrapper {
+    box-shadow: 0px 3px 10px 0px #cbcccc;
+  }
+}
+
 .catalog-items__wrapper {
     padding-top: 13px;
-    &:hover {
-      box-shadow: 0 3px 30px 0px #cbcccc;
-    }
-    &:active {
-      box-shadow: 0 3px 10px 0px #cbcccc;
-    }
 }
 .catalog-items__list {
     list-style: none;

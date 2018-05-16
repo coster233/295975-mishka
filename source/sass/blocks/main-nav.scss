@@ -50,12 +50,24 @@
         fill: #63d1bb;
       }
     }
+    &:active {
+      opacity: 0.4;
+      .main-nav__item-search {
+        opacity: 0.6;
+      }
+    }
 }
 .main-nav__link--user-cart {
     &:hover {
       color: #666666;
       .main-nav__item-search {
         fill: #63d1bb;
+      }
+    }
+    &:active {
+      opacity: 0.4;
+      .main-nav__item-search {
+        opacity: 0.6;
       }
     }
 }
