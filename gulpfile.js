@@ -11,7 +11,6 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
-var posthtml = require("gulp-posthtml");
 var run = require("run-sequence");
 var del = require("del");
 var uglify = require('gulp-uglify');
