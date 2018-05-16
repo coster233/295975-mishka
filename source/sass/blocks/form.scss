@@ -1,637 +1,745 @@
 .form {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 21px;
-    padding-bottom: 22px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 21px;
+  padding-bottom: 22px;
 }
+
 .form__description {
-    font-size: 13px;
-    line-height: 24px;
-    color: $grey;
-    margin: 0;
-    padding-bottom: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $grey;
+  margin: 0;
+  padding-bottom: 24px;
 }
+
 .form__color {
-    border: none;
-    padding: 0;
-    margin-top: 35px;
+  border: none;
+  padding: 0;
+  margin-top: 35px;
 }
+
 .form__color-title {
-    font-size: 17px;
-    line-height: 16px;
-    color: $green;
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
 }
+
 .form__text-color {
-    display: block;
-    margin-bottom: 5px;
-    margin-top: 10px;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: bold;
-    position: relative;
-    padding-top: 11px;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  position: relative;
+  padding-top: 11px;
 }
+
 .form__text-colour {
-    padding-left: 62px;
+  padding-left: 62px;
 }
+
 .form__list-color {
-    list-style: none;
-    padding: 0;
-    margin-top: 24px;
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
 }
+
 .form__items-color {
-    min-height: 42px;
-    margin-bottom: 19px;
-    &:hover {
-        & .form__item-color[type="checkbox"] + .form__text-color::before {
-            border-color: #62d1ba;
-        }
+  min-height: 42px;
+  margin-bottom: 19px;
+
+  &:hover {
+    & .form__item-color[type="checkbox"] + .form__text-color::before {
+      border-color: #62d1ba;
     }
-    &:active {
-        & .form__item-color[type="checkbox"] + .form__text-color::before {
-            border-color: #c7c7c7;
-        }
+  }
+
+  &:active {
+    & .form__item-color[type="checkbox"] + .form__text-color::before {
+      border-color: #c7c7c7;
     }
+  }
 }
+
 .form__item-color[type="checkbox"] {
-    position: absolute;
-    left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
+
 .form__item-color[type="checkbox"] + .form__text-color::before {
-    position: absolute;
-    content: "";
-    width: 37px;
-    height: 37px;
-    left: 0;
-    top: 0;
-    border: 2px solid #444444;
+  position: absolute;
+  content: "";
+  width: 37px;
+  height: 37px;
+  left: 0;
+  top: 0;
+  border: 2px solid #444444;
 }
+
 .form__item-color[type="checkbox"] + .form__text-color::after {
-    position: absolute;
-    content: "";
-    width: 22px;
-    height: 16px;
-    background-image: url("../img/tick-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    left: 10px;
-    top: 10px;
-    display: none;
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 10px;
+  top: 10px;
+  display: none;
 }
+
 .form__item-color[type="checkbox"]:checked + .form__text-color::after {
-    display: block;
+  display: block;
 }
+
 .form__communication-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 .form__communication-item {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 21px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 21px;
+  position: relative;
 }
+
 .form__communication-text {
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 16px;
-    color: $green;
-    text-transform: uppercase;
-    padding-bottom: 23px;
-    padding-top: 10px;
-    position: relative;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
+  text-transform: uppercase;
+  padding-bottom: 23px;
+  padding-top: 10px;
+  position: relative;
 }
+
 .form__communication-text::before {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 38%;
-    height: 1px;
-    width: 200px;
-    background-color: #63d1bb;
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 38%;
+  height: 1px;
+  width: 200px;
+  background-color: #63d1bb;
 }
+
 .form__communication-entry {
-    border: none;
-    border-bottom: 2px solid black;
-    padding-bottom: 16px;
-    font-size: 17px;
-    color: $grey;
-    line-height: 18px;
-    &:hover {
-        border-color: #62d1ba;
-        & + .form__communication-phone,  {
-            fill: #62d1ba;
-        }
+  border: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 16px;
+  font-size: 17px;
+  color: $grey;
+  line-height: 18px;
+
+  &:hover {
+    border-color: #62d1ba;
+
+    & + .form__communication-mail, {
+      fill: #62d1ba;
     }
-    &:focus {
-        border-color: #62d1ba;
-        & + .form__communication-phone,  {
-            fill: #62d1ba;
-        }
+
+    & + .form__communication-phone, {
+      fill: #62d1ba;
     }
-    &:hover {
-        border-color: #62d1ba;
-        & + .form__communication-mail,  {
-            fill: #62d1ba;
-        }
+  }
+
+  &:focus {
+    border-color: #62d1ba;
+
+    & + .form__communication-mail, {
+      fill: #62d1ba;
     }
-    &:focus {
-        border-color: #62d1ba;
-        & + .form__communication-mail,  {
-            fill: #62d1ba;
-        }
+
+    & + .form__communication-phone, {
+      fill: #62d1ba;
     }
+  }
 }
+
 .form__communication-phone {
-    width: 25px;
-    height: 24px;
-    position: absolute;
-    right: 8px;
-    bottom: 17px;
-    fill: #cccccc;
-    &:hover {
-        fill: #62d1ba;
-    }
-    &:active {
-        fill: #62d1ba;
-    }
+  width: 25px;
+  height: 24px;
+  position: absolute;
+  right: 8px;
+  bottom: 17px;
+  fill: #cccccc;
+
+  &:hover {
+    fill: #62d1ba;
+  }
+
+  &:active {
+    fill: #62d1ba;
+  }
 }
+
 .form__communication-mail {
-    position: absolute;
-    width: 29px;
-    height: 41px;
-    right: 5px;
-    bottom: 5px;
-    fill: #cccccc;
-    &:hover {
-        fill: #62d1ba;
-    }
-    &:active {
-        fill: #62d1ba;
-    }
+  position: absolute;
+  width: 29px;
+  height: 41px;
+  right: 5px;
+  bottom: 5px;
+  fill: #cccccc;
+
+  &:hover {
+    fill: #62d1ba;
+  }
+
+  &:active {
+    fill: #62d1ba;
+  }
 }
+
 .form__review {
-    border: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-top: -8px;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: -8px;
 }
+
 .form__review-text {
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 16px;
-    color: $green;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    position: relative;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
 }
+
 .form__review-text::before {
-    position: absolute;
-    content: "";
-    left: 58px;
-    top: 49%;
-    height: 1px;
-    width: 200px;
-    background-color: #63d1bb;
+  position: absolute;
+  content: "";
+  left: 58px;
+  top: 49%;
+  height: 1px;
+  width: 200px;
+  background-color: #63d1bb;
 }
+
 .form__review-textarea {
-    border: 2px solid black;
-    width: 260px;
-    min-height: 142px;
-    font-size: 17px;
-    color: $grey;
-    line-height: 18px;
-    margin-top: 4px;
-    padding-top: 14px;
-    padding-left: 17px;
-    box-sizing: border-box;
-    &:hover {
-        border-color: #62d1ba;
-    }
-    &:active {
-        border-color: #62d1ba;
-    }
+  border: 2px solid black;
+  width: 260px;
+  min-height: 142px;
+  font-size: 17px;
+  color: $grey;
+  line-height: 18px;
+  margin-top: 4px;
+  padding-top: 14px;
+  padding-left: 17px;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
 }
+
 .form__comment {
-    font-size: 14px;
-    line-height: 16px;
-    color: $grey;
+  font-size: 14px;
+  line-height: 16px;
+  color: $grey;
 }
+
 .form__comment-wrapper {
-    margin-top: 12px;
+  margin-top: 12px;
 }
+
 .form__submit {
-    text-transform: uppercase;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: bold;
-    color: $grey;
-    display: block;
-    width: 260px;
-    margin-top: 27px;
-    text-align: center;
-    background-color: #ffffff;
-    &:hover {
-        background-color: #444444;
-        color: white;
-    }
-    &:active {
-        color: #7c7c7c;
-    }
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $grey;
+  display: block;
+  width: 260px;
+  margin-top: 27px;
+  text-align: center;
+  background-color: #ffffff;
+
+  &:hover {
+    background-color: #444444;
+    color: white;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
 }
+
 .form__type {
-    border: none;
-    padding: 0;
-    margin: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
+
 .form__title {
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 16px;
-    color: $green;
-    text-transform: uppercase;
-    position: relative;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
+  text-transform: uppercase;
+  position: relative;
 }
+
 .form__title::before {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 50%;
-    height: 1px;
-    width: 200px;
-    background-color: #63d1bb;
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%;
+  height: 1px;
+  width: 200px;
+  background-color: #63d1bb;
 }
+
 .form__text-type {
-    display: flex;
-    margin-bottom: 5px;
-    margin-top: 16px;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: bold;
-    align-items: center;
-    position: relative;
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 16px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  align-items: center;
+  position: relative;
 }
+
 .form__text-promo {
-    margin-left: 25px;
-    width: 156px;
+  margin-left: 25px;
+  width: 156px;
 }
+
 .form__list-type {
-    list-style: none;
-    padding: 0;
-    padding-top: 16px;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  padding-top: 16px;
+  margin: 0;
 }
+
 .form__item-type {
-    width: 200px;
+  width: 200px;
 }
+
 .form__item-type[type="radio"] {
-    position: absolute;
-    left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
+
 .form__item-type[type="radio"] + .form__text-type::before {
-    content: "";
-    display: inline-block;
-    width: 37px;
-    height: 37px;
-    vertical-align: middle;
-    box-shadow: 0 0 0 2px black;
-    border-radius: 50%;
+  content: "";
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  vertical-align: middle;
+  box-shadow: 0 0 0 2px black;
+  border-radius: 50%;
 }
+
 .form__item-type[type="radio"] + .form__text-type::after {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    left: 11px;
-    background-color: #63d1bb;
-    border-radius: 50%;
-    vertical-align: middle;
-    display: none;
-    top: 50%;
-    margin-top: -8px;
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 11px;
+  background-color: #63d1bb;
+  border-radius: 50%;
+  vertical-align: middle;
+  display: none;
+  top: 50%;
+  margin-top: -8px;
 }
+
 .form__item-type[type="radio"]:checked + .form__text-type::after {
-    display: block;
+  display: block;
 }
+
 .form__item-type[type="radio"] + .form__text-type:hover::before {
-    box-shadow: 0 0 0 2px #62d1ba;
+  box-shadow: 0 0 0 2px #62d1ba;
 }
+
 .form__item-type[type="radio"] + .form__text-type:active::before {
-    box-shadow: 0 0 0 2px #c7c7c7;
+  box-shadow: 0 0 0 2px #c7c7c7;
 }
+
 .form__user {
-    margin: 0;
-    padding: 0;
-    border: none;
-    margin-top: 29px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-top: 29px;
 }
+
 .form__user-text {
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: bold;
-    padding-bottom: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
+
 .form__user-login {
-    font-size: 17px;
-    line-height: 16px;
-    color: $green;
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
 }
+
 .form__user-list {
-    list-style: none;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.form__user-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 21px;
+}
+
+.form__user-entry {
+  border: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 21px;
+  font-size: 17px;
+  color: $grey;
+  line-height: 18px;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:visited {
+    border-color: #62d1ba;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 49px;
+  }
+
+  .form__type {
+    display: flex;
+    width: 533px;
+    margin-top: 7px;
+    align-items: normal;
+    margin-bottom: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .form__title {
+    padding-top: 45px;
+  }
+
+  .form__description {
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 49px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .form__list-type {
+    margin-left: 129px;
+    width: 323px;
     padding: 0;
+  }
+
+  .form__text-promo {
+    font-size: 19px;
+    line-height: 18px;
+    width: 260px;
+    margin-left: 30px;
+  }
+
+  .form__communication-text::before {
+    display: none;
+  }
+
+  .form__review-text::before {
+    display: none;
+  }
+
+  .form__title::before {
+    display: none;
+  }
+
+  .form__items-type {
+    margin-bottom: 29px;
+  }
+
+  .form__text-type {
+    font-size: 19px;
+    line-height: 18px;
+    width: 360px;
+    margin-top: 28px;
+  }
+
+  .form__item-type[type="radio"] + .form__text-type::before {
+    width: 48px;
+    height: 48px;
+  }
+
+  .form__item-type[type="radio"] + .form__text-type::after {
+    left: 16px;
+  }
+
+  .form__item-color[type="checkbox"] + .form__text-color::after {
+    width: 33px;
+    height: 22px;
+    top: 17px;
+    left: 13px;
+  }
+
+  .form__text-color {
+    font-size: 19px;
+    line-height: 18px;
+    margin-top: 0;
+    padding-top: 18px;
+  }
+
+  .form__color {
+    display: flex;
+    align-items: normal;
+    padding-left: 50px;
+    padding-right: 0;
+    background-color: #f1f1f1;
+    margin-top: 24px;
+    padding-top: 23px;
+    padding-bottom: 10px;
+  }
+
+  .form__list-color {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 0;
-}
-.form__user-name {
+    margin-left: 119px;
+  }
+
+  .form__text-colour {
+    padding-left: 80px;
+  }
+
+  .form__item-color[type="checkbox"] + .form__text-color::before {
+    width: 49px;
+    height: 49px;
+  }
+
+  .form__items-color {
+    width: 204px;
+    margin-bottom: 35px;
+    margin-right: 58px;
+  }
+
+  .form__user {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 21px;
-}
-.form__user-entry {
-    border: none;
-    border-bottom: 2px solid black;
-    padding-bottom: 21px;
-    font-size: 17px;
-    color: $grey;
+    align-items: baseline;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 23px;
+  }
+
+  .form__user-text {
+    font-size: 19px;
     line-height: 18px;
-    &:hover {
-        border-color: #62d1ba;
-    }
-    &:visited {
-        border-color: #62d1ba;
-    }
+  }
+
+  .form__user-entry {
+    width: 100%;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 18px;
+    margin-left: 23px;
+    padding-bottom: 11px;
+  }
+
+  .form__user-list {
+    width: 500px;
+    margin-left: 122px;
+  }
+
+  .form__user-name {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+  }
+
+  .form__communication {
+    background-color: #f1f1f1;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 9px;
+    padding-bottom: 26px;
+  }
+
+  .form__communication-list {
+    padding-top: 57px;
+  }
+
+  .form__communication-entry {
+    background-color: #f1f1f1;
+    margin-left: 96px;
+    padding-left: 18px;
+    width: 500px;
+    height: 40px;
+    padding-bottom: 0;
+  }
+
+  .form__communication-item {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3px;
+  }
+
+  .form__communication-text {
+    width: 74px;
+  }
+
+  .form__communication-phone {
+    right: 25px;
+    height: 38px;
+  }
+
+  .form__communication-mail {
+    height: 48px;
+    right: 23px;
+  }
+
+  .form__review {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+  }
+
+  .form__review-textarea {
+    margin-left: auto;
+    width: 75%;
+    font-size: 19px;
+    padding-top: 8px;
+    padding-left: 19px;
+  }
+
+  .form__comment-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 46px;
+  }
+
+  .form__submit {
+    width: 230px;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  .form__comment {
+    font-size: 17px;
+    line-height: 30px;
+    align-self: center;
+  }
 }
-@media (min-width:$tablet-width) {
-    .form {
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-bottom: 49px;
-    }
-    .form__type {
-        display: flex;
-        align-items: baseline;
-        width: 533px;
-        margin-top: 7px;
-        align-items: normal;
-        margin-bottom: 24px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .form__title {
-        padding-top: 45px;
-    }
-    .form__description {
-        font-size: 17px;
-        line-height: 30px;
-        padding-top: 49px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .form__list-type {
-        margin-left: 129px;
-        width: 323px;
-        padding: 0;
-    }
-    .form__text-promo {
-        font-size: 19px;
-        line-height: 18px;
-        width: 260px;
-        margin-left: 30px;
-    }
-    .form__communication-text::before {
-        display: none;
-    }
-    .form__review-text::before {
-        display: none;
-    }
-    .form__title::before {
-        display: none;
-    }
-    .form__items-type {
-        margin-bottom: 29px;
-    }
-    .form__text-type {
-        font-size: 19px;
-        line-height: 18px;
-        width: 360px;
-        margin-top: 28px;
-    }
-    .form__item-type[type="radio"] + .form__text-type::before {
-        width: 48px;
-        height: 48px;
-    }
-    .form__item-type[type="radio"] + .form__text-type::after {
-        left: 16px;
-    }
-    .form__item-color[type="checkbox"] + .form__text-color::after {
-        width: 33px;
-        height: 22px;
-        top: 17px;
-        left: 13px;
-    }
-    .form__text-color {
-        font-size: 19px;
-        line-height: 18px;
-        margin-top: 0;
-    }
-    .form__color {
-        display: flex;
-        align-items: normal;
-        padding-left: 50px;
-        padding-right: 0px;
-        background-color: #f1f1f1;
-        margin-top: 24px;
-        padding-top: 23px;
-        padding-bottom: 10px;
-    }
-    .form__list-color {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 119px;
-    }
-    .form__text-colour {
-        padding-left: 80px;
-    }
-    .form__text-color {
-        padding-top: 18px;
-    }
-    .form__item-color[type="checkbox"] + .form__text-color::before {
-        width: 49px;
-        height: 49px;
-    }
-    .form__items-color {
-        width: 204px;
-        margin-bottom: 35px;
-        margin-right: 58px;
-    }
-    .form__user {
-        display: flex;
-        align-items: baseline;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-top: 23px;
-    }
-    .form__user-text {
-        font-size: 19px;
-        line-height: 18px;
-    }
-    .form__user-entry {
-        width: 100%;
-        font-size: 19px;
-        line-height: 18px;
-        padding-left: 18px;
-        margin-left: 23px;
-        padding-bottom: 11px;
-    }
-    .form__user-list {
-        width: 500px;
-        margin-left: 122px;
-    }
-    .form__user-name {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 40px;
-    }
-    .form__communication {
-        background-color: #f1f1f1;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-top: 9px;
-        padding-bottom: 26px;
-    }
-    .form__communication-list {
-        padding-top: 57px;
-    }
-    .form__communication-entry {
-        background-color: #f1f1f1;
-        margin-left: 96px;
-        padding-left: 18px;
-        width: 500px;
-        height: 40px;
-        padding-bottom: 0;
-    }
-    .form__communication-item {
-        display: flex;
-        flex-direction: row;
-        padding-top: 3px;
-    }
-    .form__communication-text {
-        width: 74px;
-    }
-    .form__communication-phone {
-        right: 25px;
-        height: 38px;
-    }
-    .form__communication-mail {
-        height: 48px;
-        right: 23px;
-    }
-    .form__review {
-        display: flex;
-        flex-direction: row;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-top: 50px;
-    }
-    .form__review-textarea {
-        margin-left: auto;
-        width: 75%;
-        font-size: 19px;
-        padding-top: 8px;
-        padding-left: 19px;
-    }
-    .form__comment-wrapper {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100%;
-        padding-top: 0;
-        margin-top: 46px;
-    }
-    .form__submit {
-        width: 230px;
-        margin-right: auto;
-        margin-top: 0;
-    }
-    .form__comment {
-        font-size: 17px;
-        line-height: 30px;
-        align-self: center;
-    }
-}
-@media (min-width:$desktop-width) {
-    .form__description {
-        padding-left: 227px;
-        padding-top: 100px;
-        width: 700px;
-    }
-    .form__type {
-        justify-content: normal;
-        padding-left: 111px;
-        margin-top: 4px;
-    }
-    .form__list-type {
-        margin-left: 75px;
-    }
-    .form__title {
-        text-align: center;
-    }
-    .form__color {
-        justify-content: normal;
-        padding-top: 20px;
-        padding-left: 107px;
-    }
-    .form__list-color {
-        margin-left: 72px;
-    }
-    .form__user {
-        padding-left: 109px;
-    }
-    .form__user-list {
-        margin-left: 71px;
-        width: 700px;
-    }
-    .form__communication {
-        padding-left: 111px;
-    }
-    .form__communication-text {
-        width: 114px;
-    }
-    .form__communication-entry {
-        margin-left: 0;
-        width: 682px;
-    }
-    .form__communication-item {
-        padding-top: 5px;
-    }
-    .form__communication-phone {
-        right: 183px;
-    }
-    .form__communication-mail {
-        right: 181px;
-    }
-    .form__review {
-        padding-left: 112px;
-        margin-top: 45px;
-    }
-    .form__review-text {
-        width: 115px;
-    }
-    .form__review-textarea {
-        margin-left: 0;
-        width: 700px;
-    }
-    .form__comment-wrapper {
-        padding-left: 113px;
-        width: 700px;
-        margin-top: 45px;
-    }
+
+@media (min-width: $desktop-width) {
+  .form__description {
+    padding-left: 227px;
+    padding-top: 100px;
+    width: 700px;
+  }
+
+  .form__type {
+    justify-content: normal;
+    padding-left: 111px;
+    margin-top: 4px;
+  }
+
+  .form__list-type {
+    margin-left: 75px;
+  }
+
+  .form__title {
+    text-align: center;
+  }
+
+  .form__color {
+    justify-content: normal;
+    padding-top: 20px;
+    padding-left: 107px;
+  }
+
+  .form__list-color {
+    margin-left: 72px;
+  }
+
+  .form__user {
+    padding-left: 109px;
+  }
+
+  .form__user-list {
+    margin-left: 71px;
+    width: 700px;
+  }
+
+  .form__communication {
+    padding-left: 111px;
+  }
+
+  .form__communication-text {
+    width: 114px;
+  }
+
+  .form__communication-entry {
+    margin-left: 0;
+    width: 682px;
+  }
+
+  .form__communication-item {
+    padding-top: 5px;
+  }
+
+  .form__communication-phone {
+    right: 183px;
+  }
+
+  .form__communication-mail {
+    right: 181px;
+  }
+
+  .form__review {
+    padding-left: 112px;
+    margin-top: 45px;
+  }
+
+  .form__review-text {
+    width: 115px;
+  }
+
+  .form__review-textarea {
+    margin-left: 0;
+    width: 700px;
+  }
+
+  .form__comment-wrapper {
+    padding-left: 113px;
+    width: 700px;
+    margin-top: 45px;
+  }
 }

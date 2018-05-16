@@ -1,49 +1,56 @@
 .map {
-    padding-top: 21px;
-    position: relative;
+  padding-top: 21px;
+  position: relative;
 }
+
 .map__cart {
-    position: relative;
+  position: relative;
 }
+
 .map__interactive {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
+
 .map__cart::before {
-    position: absolute;
-    content: "";
-    top: 143px;
-    left: 138px;
-    width: 67px;
-    height: 100px;
-    background-image: url(../img/map-pin.svg);
-    z-index: 1;
+  position: absolute;
+  content: "";
+  top: 143px;
+  left: 138px;
+  width: 67px;
+  height: 100px;
+  background-image: url("../img/map-pin.svg");
+  z-index: 1;
 }
-@media (min-width:$tablet-width) {
-    .map {
-        padding-top: 31px;
-    }
-    .map__cart::before {
-        top: 141px;
-        left: 365px;
-    }
+
+@media (min-width: $tablet-width) {
+  .map {
+    padding-top: 31px;
+  }
+
+  .map__cart::before {
+    top: 141px;
+    left: 365px;
+  }
 }
-@media (min-width:$desktop-width) {
-    .map {
-        margin-left: 26px;
-        padding-top: 0;
-        width: 525px;
-        height: 457px;
-    }
-    .map__cart::before {
-        top: 148px;
-        left: 241px;
-    }
+
+@media (min-width: $desktop-width) {
+  .map {
+    margin-left: 26px;
+    padding-top: 0;
+    width: 525px;
+    height: 457px;
+  }
+
+  .map__cart::before {
+    top: 148px;
+    left: 241px;
+  }
 }
