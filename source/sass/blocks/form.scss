@@ -34,6 +34,7 @@
   font-weight: bold;
   position: relative;
   padding-top: 11px;
+  padding-bottom: 15px;
 }
 
 .form__text-colour {
@@ -66,6 +67,9 @@
 .form__item-color[type="checkbox"] {
   position: absolute;
   left: -9999px;
+  &:focus + .form__text-color::before {
+    border-color: #62d1ba;
+  }
 }
 
 .form__item-color[type="checkbox"] + .form__text-color::before {
@@ -336,6 +340,9 @@
 .form__item-type[type="radio"] {
   position: absolute;
   left: -9999px;
+  &:focus + .form__text-type::before {
+    box-shadow: 0 0 0 2px #63d1bb;
+  }
 }
 
 .form__item-type[type="radio"] + .form__text-type::before {

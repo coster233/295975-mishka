@@ -160,16 +160,18 @@
   .catalog-items__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .catalog-items__item {
     flex-direction: column;
     width: 316px;
-    margin-right: 53px;
+    margin-right: 48px;
   }
 
   .catalog-items {
     margin-top: 75px;
+    padding-right: 0;
   }
 
   .catalog-items__exposition {
@@ -183,7 +185,7 @@
   }
 
   .catalog-items__wrapper {
-    padding-top: 13px;
+    padding-top: 8px;
   }
 
   .catalog-items__price {
