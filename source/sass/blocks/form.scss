@@ -312,6 +312,8 @@
     border-radius: 50%;
     vertical-align: middle;
     display: none;
+    top: 50%;
+    margin-top: -8px;
 }
 .form__item-type[type="radio"]:checked + .form__text-type::after {
     display: block;
