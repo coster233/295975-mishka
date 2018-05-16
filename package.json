@@ -10,7 +10,6 @@
     "gulp": "3.9.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
-    "gulp-posthtml": "^3.0.4",
     "gulp-sass": "4.0.x",
     "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.0",
@@ -48,7 +47,6 @@
     "gulp-imagemin": "^4.1.0",
     "gulp-webp": "^3.0.0",
     "npm-install-peers": "^1.2.1",
-    "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1"
   }
 }

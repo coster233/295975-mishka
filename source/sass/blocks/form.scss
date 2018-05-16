@@ -54,7 +54,8 @@
     }
 }
 .form__item-color[type="checkbox"] {
-    display: none;
+    position: absolute;
+    left: -9999px;
 }
 .form__item-color[type="checkbox"] + .form__text-color::before {
     position: absolute;
@@ -290,7 +291,8 @@
     width: 200px;
 }
 .form__item-type[type="radio"] {
-    display: none;
+    position: absolute;
+    left: -9999px;
 }
 .form__item-type[type="radio"] + .form__text-type::before {
     content: "";

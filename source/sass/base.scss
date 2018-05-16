@@ -14,29 +14,3 @@ img {
     width: 100%;
     height: auto;
 }
-.main-wrapper {
-    margin: 0 auto;
-    background-color: #ffffff;
-}
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(100%);
-}
-.button {
-    border: 2px solid $grey;
-    padding-top: 15px;
-    padding-bottom: 17px;
-}
-$mobile-width:767px;
-$tablet-width: 768px;
-$desktop-width: 1150px;
-$retina-dpi: 144dpi;
-$retina-dppx: 1.5dppx;
