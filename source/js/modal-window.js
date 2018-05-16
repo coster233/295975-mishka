@@ -2,6 +2,7 @@ var modalwindow = document.querySelector(".modal");
 var modalclose = document.querySelector(".modal__button");
 var catalogLink = document.querySelectorAll(".catalog-items__basket");
 var buttonopen = document.querySelector(".goods-week__order");
+svg4everybody();
 
 
 if (buttonopen) {
