@@ -45,10 +45,11 @@
 
 @media (min-width: $desktop-width) {
   .map {
-    margin-left: 26px;
+    margin-left: 11px;
     padding-top: 0;
     width: 525px;
     height: 457px;
+    margin-top: 0;
   }
 
   .map__cart::before {
