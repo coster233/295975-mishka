@@ -38,13 +38,16 @@
 }
 
 .page-footer__social-list {
-  width: 177px;
-  padding-top: 42px;
-  padding-bottom: 30px;
-  padding-left: 69px;
+  width: 180px;
+  padding-top: 27px;
+  padding-bottom: 22px;
+  padding-left: 34px;
+  padding-right: 42px;
+  margin-left: 33px;
   display: flex;
   list-style: none;
   justify-content: space-around;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .page-footer__social-link {
@@ -63,6 +66,7 @@
   list-style: none;
   display: flex;
   margin-bottom: 0;
+  padding-top: 8px;
 }
 
 .page-footer__copyright-text {
@@ -99,10 +103,17 @@
     height: 34px;
   }
 
+  .page-footer__social-list {
+    width: 183px;
+    padding: 38px 0 22px 0;
+    margin-left: 65px;
+    border-bottom: none;
+  }
+
   .page-footer__list {
     padding: 0;
     margin-left: 62px;
-    padding-top: 7px;
+    padding-top: 10px;
   }
 
   .page-footer {
