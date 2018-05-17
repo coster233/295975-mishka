@@ -32,7 +32,9 @@
 
 @media (min-width: $tablet-width) {
   .map {
-    padding-top: 31px;
+    margin-top: 31px;
+    height: 457px;
+    width: 768px;
   }
 
   .map__cart::before {
