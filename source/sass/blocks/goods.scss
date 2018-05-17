@@ -2,14 +2,19 @@
   .goods {
     margin-top: -8px;
   }
+  .goods__list-wrapper {
+    z-index: 2;
+    margin-top: -90px;
+  }
 
   .goods__preview {
-    background-image: url("../img/hero-mobile@1x.jpg");
+    background-image: url(../img/hero-mobile@1x.jpg);
     width: auto;
-    height: 284px;
-    background-position: -55px 53px;
+    height: 373px;
+    background-position: -126px -18px;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-mobile@2x.jpg");
@@ -95,7 +100,7 @@
     background-image: url("../img/hero-desktop.jpg");
     width: 768px;
     height: 746px;
-    background-position: 0 -17px;
+    background-position: 0 -3px;
     background-repeat: no-repeat;
     position: relative;
 
@@ -169,7 +174,7 @@
     background-image: url("../img/hero-desktop.jpg");
     height: 746px;
     width: 1150px;
-    background-position: 241px -2px;
+    background-position: 192px -2px;
     background-repeat: no-repeat;
     position: relative;
     background-color: #f9f9f9;
